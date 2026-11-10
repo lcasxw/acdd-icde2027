@@ -1,6 +1,13 @@
-# Access-Conditioned Decision Decomposition for Auditing Cross-Dataset Motor-Imagery EEG Decoders
+# Reproduction guide for acdd-public-v1
 
-Local release candidate ICDE-2027-EAB-submission-prep-4 for the ICDE 2027 EAB manuscript. The authors handle public distribution rights and the project hosting address (AUTHOR_HANDLED). Authorization for local editing, compilation, testing and packaging is recorded as PASS — AUTHOR_AUTHORIZED. This archive supplies the manuscript, its six vectors, analysis code, settings, aggregate reference values and digests of the additional inputs. Trial predictions, session labels, participant records, fitted snapshots and model weights require separate authorization. All 363 separately required inputs are withheld from this archive. AUTHOR_HANDLED in `required_inputs.csv` assigns responsibility for permission. In the complete author copy, all 363 matching files are already under reproduction/inputs/. For an authorized two-archive delivery, extract the separately supplied input archive beside reproduce.py so that inputs/ has the paths in required_inputs.csv. The upstream databases supply raw recordings. They do not supply these project-specific exports, fitted snapshots or weights. An absent input stops its command with NOT_RUN and exit code 2. Keep generated participant-level outputs private.
+The repository includes 13 input volumes and a standard-library materialization program. From this directory, run the commands below before starting the four data-dependent analyses. The materializer fetches the small original BNCI cue archive, checks its SHA-256, restores the source-score rows locally and verifies every resulting input. Use --labels /path/to/true_labels.zip to provide the original archive offline. INPUTS in the commands below can be replaced with inputs or omitted.
+
+~~~sh
+python -B materialize_inputs.py
+python -B reproduce.py verify-inputs
+~~~
+
+[Public access and commands](../README.md) · [Source terms](../DATA_SOURCES.md) · [Transport and checkpoint identity](checkpoint_provenance.csv)
 
 ## Verify and build the paper
 
@@ -17,7 +24,7 @@ The root candidate.pdf is the reviewed file. Source paths in the Fig. 3 registry
 
 ## Run a score audit
 
-Use Python 3.10.11 and the package in requirements.txt. Use a different, previously unused output directory for each invocation. INPUTS denotes the directory populated with the authorized files. Each command verifies the shipped code and relevant frozen file hashes before reading trial data. One worker is sufficient for Table IV.
+Use Python 3.10.11 and the package in requirements.txt. Use a different, previously unused output directory for each invocation. INPUTS denotes the directory produced by materialize_inputs.py. Each command verifies the shipped code and relevant frozen file hashes before reading trial data. One worker is sufficient for Table IV.
 
 ~~~sh
 python -B reproduce.py verify-inputs --inputs INPUTS

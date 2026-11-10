@@ -1,22 +1,22 @@
 {
-  "edition": "ICDE-2027-EAB-submission-prep-4",
-  "status_scope": "Local submission materials. The authors handle their declarations, distribution rights and the hosting decision.",
+  "edition": "acdd-public-v1",
+  "status_scope": "Public frozen-score replay. Upstream EEG generation and future raw-signal perturbation were not executed.",
   "candidate_pdf_sha256": "49971757a3f90d07e9131f4a6ec7e9e78507512c4e8c6b9c021fa86d5fe40c33",
   "active_tex_sha256": "80229beb89c23eaba6e426713e2c01f8439eba0398163167e117d30e955a4cae",
   "source_archive_sha256": "35d06bb5a8b5a4b67025fef3051003bccfa0fed908648dc8371404ace73a3dc4",
   "manuscript_tree_sha256": "a5ceefd7a4643fd5f8d884e1d3dc0e170e507db74ce12a824a262714ee46ef55",
   "release_code_tree_sha256": "11c6bc2efb917624fb84371cb892de0c3811cc3abcab3d9e67a4ae4bffe640a6",
   "tree_algorithm": "SHA256 of sorted UTF-8 path + NUL + lowercase file SHA256 + LF",
-  "code_version_basis": "content digests; no project Git HEAD in this checkout",
+  "code_version_basis": "Scientific analysis code unchanged from the preparation archive. Public transport is additionally hashed.",
   "calibration_version": "platt-v2-centered-convex-box-20261015",
   "figure3_registry": "expected/fig3.csv",
   "historical_registry_sha256": "433782286d8941a82ef5c60ce8632db75aa8deb485966caee5d5355d3359599b",
   "expected_table_iv": "expected/table_iv.csv",
   "files": {
-    "README.md": "1b31816b79ce158c18e49634cc9f66b1d8447c6f874fb24f01b6b5a0c89f1c41",
     "analysis/analyze_v4_dreyer_confirmation.py": "f21ed0a6f2bd46e9dc902d387a551b442e0f336aee6dd84959b08918a9c1bbfe",
     "analysis/summarize_v5_historical_estimands.py": "c997bd3f2f854a7133b818f9de4534f82ed3f8afd64429703e33ba81f4909279",
     "candidate.pdf": "49971757a3f90d07e9131f4a6ec7e9e78507512c4e8c6b9c021fa86d5fe40c33",
+    "checkpoint_provenance.csv": "e3d0d8e32f58cc2ecb59f5e86ea5cc9b6e8c9d31280ffb064edbf05a9b022749",
     "code_origins.json": "7c74a2c8b1b4a60a9ba8b772ec143dfd2c8cc25af5730c59d81a9a2d1f11970b",
     "common_suffix_protocol.json": "f461c0c120f2a2c11238f4911c500829d36f5eacdf5b10079b4dc0c2ce933ace",
     "configs/dreyer_plan.json": "e4224baa940b28c3c3d84f8fd2b0e572debc93843f9026d915277714958e64f9",
@@ -24,6 +24,7 @@
     "configs/v4_journal_protocol.json": "99219dca71eb238f023355a3cc253a579107c988d07196e8fa95366765ef4081",
     "engine/frozen_io.py": "8f1d0f1c065a93031e836265da7a505a535aefc6f65e68c2c89c0c39ea84d0c8",
     "engine/intervals.py": "b754b5478a66611c5e1921feeefebeebca444fb97507dede47ef06fcebdf0fe8",
+    "engine/known_prior.py": "7941bef21688be0b0c13a7304d3acc4d30e716c468f2103b7a6085692e310250",
     "engine/score_replay.py": "0444aa0603fa6cf02c68fcf90cae9eb946113966681af365c560516c59452e3c",
     "engine/snapshot.py": "7bd655588e7845b31609bfcd2781555618d047feaccf121ce8aa5708c5d58d25",
     "engine/stream.py": "e7e97f8058f812980120f0061d83d07e7c1a4ff78be605436f7a2c6ac39f86f9",
@@ -41,10 +42,9 @@
     "expected/review_construct_cells.csv": "d61b4d2592d5bf39fcd385940df99e141ea619b364b3058c9faa9a9875acba24",
     "expected/review_harm_quartiles.csv": "d82d2606a9fc99f385c41f498e03be1116e11d06177de17e1530d825a408a784",
     "expected/review_k_response.csv": "814b465c769d1b85ae62e47e3144a2ddedb4261d7e50cea65b518da6b30cfd30",
+    "expected/revision_known_prior_witness.csv": "0e20791ef8744e81f54e915a8e0e2553c09cbbbb0ebd00dc21511a55ca20d2b8",
     "expected/stieger_interval_lineage.csv": "cf81618f9d2ab2414d79fcbbada46984d7ef672b5810d2a144a7260a3f79ea34",
     "expected/table_iv.csv": "ac41854f34a2adaa5e57a63dabf1e39a736c8afce41de90bc9727f7bab532be3",
-    "manuscript/IEEEtran.bst": "314f0ece704568faf827011bac498650691b2b5ee06320720830e782416d5a5f",
-    "manuscript/IEEEtran.cls": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7",
     "manuscript/discussion.tex": "85aadd549cf04e9883dde94e272c11a44fa9b08682b8b394573a2d0262eb5088",
     "manuscript/figures/figure1_acdd_workflow.pdf": "415bbe11df29f69813587baeaaf574da50e1610f2259c47de7bc50a84cc91658",
     "manuscript/figures/figure2_construct_protected_audit.pdf": "46720e0da3f9ca17dfe508b41a6012894f783111382dc197eb446a455c6c144a",
@@ -57,18 +57,23 @@
     "manuscript/generated/policies.tex": "353a0ff98ea08b58345739e450c7d997b4b1485f5397ffc7962b08786b9f6f8d",
     "manuscript/generated/robustness.tex": "5e9a24ab9b1f2dd4636d52a70995bee8523633f032478f3dc0200bf8cdd539a8",
     "manuscript/generated/stieger.tex": "ffa906ec9d914c57a17ebedbe0cccbf796f58f4220bf7b8f36e58f745c905dc5",
+    "manuscript/IEEEtran.bst": "314f0ece704568faf827011bac498650691b2b5ee06320720830e782416d5a5f",
+    "manuscript/IEEEtran.cls": "da751920a317ed318b7b5cd7fa585a6cc7d28502d457856382e9be24b10a3bd7",
     "manuscript/main.tex": "80229beb89c23eaba6e426713e2c01f8439eba0398163167e117d30e955a4cae",
     "manuscript/method.tex": "7e76b405b04e52f79ae5167e2e45cfcf87b740dcb40a699ac192ec1aa3c6c512",
     "manuscript/protocols.tex": "ff89d797664f107ede7336209012c7d610da57b269fd5121425426a867fd2e03",
     "manuscript/references.bib": "9f67cac0374644e6d0b194bc6c40a2a1bf56e650728d2a1bef4bedf65c3a41ed",
     "manuscript/results.tex": "70f22e62dd63396076951b020b5cb10f457a1e4121b3dc39290d7d411901ccce",
     "manuscript/sensitivity.tex": "881fb80379cf8bd42c42ee0548541100459fa5aadf218e65a7a8e592de08677a",
+    "materialize_inputs.py": "e70bafcf57c6acb11444938b907db504fb855c46c7fe50b95148792631eebcb4",
+    "public_input_layout.json": "0090e7de505a8b11a49828e39faed35e426697f3a3ad39f1025950f6901cddce",
     "raw_reference/scripts/cloud/run_v5_stieger_participant_major.py": "5c867ec4b7b80b0574e59d04efd1abb6171a50dedc5d6d94046e24d09e4a3dca",
     "raw_reference/src/acdd/stieger_export.py": "75fe608e62a5d5b5d2753a08181bca5a3f6af6da630937f597c15e1f3394f201",
     "raw_reference/src/aog/models/eegnet.py": "b6fb6bb0f45a1e9296161575e286996e09700faad7a706dcb1f1a5b680421068",
     "raw_reference/src/aog/normalization.py": "c4774ecda68558963eff8c66ae4afbf6ba5ab45398de9f33446614a1d8217423",
+    "README.md": "10315e417eba2e1745bfa2c265baa00fa80634cd8d1cb36f7ea24680c5785964",
     "reproduce.py": "824b22e75df58cca2fd9d86ee65ded67d9a7b6790a421150644bb504cc090429",
-    "required_inputs.csv": "8d0f76db6673fd4561667c0841d562e0023d49e72f2476a6406a1aa4539ebb45",
+    "required_inputs.csv": "30d5fb88649617b23b8e079baa8946130357f1f9ea4012646d3d4605cfc5869e",
     "requirements.txt": "a23aaf94250a9f53031a592980142245a848e2372b6c6c3093e8260b129265b8",
     "scope_justification.txt": "ee395dc6cc968ee8c2d3e94bbfe8eaf1b6572806786f4c1308b866955e50e336",
     "src/acdd/__init__.py": "fdbf7d329cb883930202e6696ae4dc2cd72600d777313033709ccca7d174a93d",
@@ -81,9 +86,7 @@
     "src/aog/__init__.py": "17d913e3b7dfed0a60ff93d3f99c17e03c3b994afde8fba845b80c00643d69f8",
     "src/aog/journal_evaluation.py": "e59c7f4260279d6827578d19b4bd09a739c0442e1324cca0bc5b2518684d60ea",
     "src/aog/rank_calibration.py": "9d9320ce81be2e62827ffaca39f74a673c619e10138046798ad7bcefd01929b8",
-    "units.json": "aab85701aa1007eaed8feaedcd67f4abeae1d4e5f5f90761995ff30d7a98db39",
-    "expected/revision_known_prior_witness.csv": "0e20791ef8744e81f54e915a8e0e2553c09cbbbb0ebd00dc21511a55ca20d2b8",
-    "engine/known_prior.py": "7941bef21688be0b0c13a7304d3acc4d30e716c468f2103b7a6085692e310250"
+    "units.json": "aab85701aa1007eaed8feaedcd67f4abeae1d4e5f5f90761995ff30d7a98db39"
   },
   "table_iv_freeze": {
     "calibration": "platt-v2-centered-convex-box-20261015",
@@ -116,7 +119,7 @@
     "plotted": "post-confirmation participant bootstrap, interpolated percentiles after seed and source averaging",
     "used_in": "Fig. 2(d) gain, Fig. 3 Stieger rows and matching Table II gain rows"
   },
-  "baseline_edition": "ICDE-2027-EAB-submission-prep-3",
+  "baseline_edition": "ICDE-2027-EAB-submission-prep-4",
   "local_operations": {
     "status": "PASS",
     "authorization": "AUTHOR_AUTHORIZED",
@@ -130,13 +133,12 @@
   },
   "authorship_and_declarations": "AUTHOR_HANDLED",
   "gated_inputs": {
-    "count": 363,
-    "included": 0,
-    "distribution_responsibility": "AUTHOR_HANDLED",
-    "permission_basis": "No redistribution permission inferred from local authorization."
+    "count": 0,
+    "public_materialized_files": 363,
+    "upstream_label_dependency": "https://www.bbci.de/competition/iv/results/ds2a/true_labels.zip"
   },
-  "public_host": null,
-  "public_upload": "NOT_RUN",
+  "public_host": "https://github.com/lcasxw/acdd-icde2027",
+  "public_upload": "Publication copy; retrieval and numerical execution are recorded separately.",
   "hosted_validation": "NOT_RUN",
   "cmt_submission": "AUTHOR_HANDLED",
   "known_prior_example": {
@@ -150,9 +152,10 @@
     "absolute_tolerance": 1e-12
   },
   "private_input_companion": {
-    "filename": "AUTHORIZED_INPUTS_PRIVATE.zip",
-    "files": 363,
-    "sha256": "8cb06de35e09ca8200cf49f3401ee398d9f1f0bc03aa2e7b3ecd4027f19be734",
-    "scope": "Author handoff only. Distribution rights are handled separately."
-  }
+    "scope": "The original unsanitized author archive is historical and is excluded from the public release."
+  },
+  "input_transport": "public_input_layout.json",
+  "checkpoint_provenance": "checkpoint_provenance.csv",
+  "authors_publication_decision": "The author designated the public lcasxw/acdd-icde2027 repository and authorized publication of reproducibility materials.",
+  "public_input_fetch_code_sha256": "e70bafcf57c6acb11444938b907db504fb855c46c7fe50b95148792631eebcb4"
 }

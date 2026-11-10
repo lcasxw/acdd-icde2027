@@ -1,0 +1,106 @@
+{
+  "edition": "acdd-public-v1",
+  "input_files": 363,
+  "volumes": [
+    {
+      "filename": "inputs-01.zip",
+      "sha256": "7251035389c148b506d175743469493d1e7278112a5e28c6191ead826582c629",
+      "bytes": 16876564,
+      "files": 21
+    },
+    {
+      "filename": "inputs-02.zip",
+      "sha256": "7810441276eb2854c230a0c06aaefe66398e7e69b94b5dd980228698debb370d",
+      "bytes": 17782910,
+      "files": 15
+    },
+    {
+      "filename": "inputs-03.zip",
+      "sha256": "30620450f63071ab88ff72cb0f81321249741a9ef7497c093f3bf7100fcf073b",
+      "bytes": 18222746,
+      "files": 15
+    },
+    {
+      "filename": "inputs-04.zip",
+      "sha256": "e00bacaae4d1d1ec9228752f363afb298d95c91ff25fb1d5fed26b0e2c5e0720",
+      "bytes": 18283919,
+      "files": 15
+    },
+    {
+      "filename": "inputs-05.zip",
+      "sha256": "772dbc9cdddf54adafc7dab85947638a6876b70e9dd6f6fa7c0f107b6f768f4a",
+      "bytes": 18544280,
+      "files": 15
+    },
+    {
+      "filename": "inputs-06.zip",
+      "sha256": "220ff936a3c6adbfd9a271c5ecb31bf488747b9a5621d77d6bca03c65885ce5b",
+      "bytes": 15876452,
+      "files": 15
+    },
+    {
+      "filename": "inputs-07.zip",
+      "sha256": "5882426e6e425841c20909569bf5df7f8b0ae59cbd9ddd61500824ff49a312fc",
+      "bytes": 16113363,
+      "files": 39
+    },
+    {
+      "filename": "inputs-08.zip",
+      "sha256": "8fae873ffad65b0823c1a7107f1bc323e7d9e09bc456ebd3a09fefc1d9d65510",
+      "bytes": 16700928,
+      "files": 35
+    },
+    {
+      "filename": "inputs-09.zip",
+      "sha256": "c2149d8d6dc0cf62c9efd6d53ee523562c530b2d283f862dd538fa8cc66668ef",
+      "bytes": 15916076,
+      "files": 46
+    },
+    {
+      "filename": "inputs-10.zip",
+      "sha256": "fc631264ceccb5eee01c18f769e77a35796f76ffb2e3779a4efdc78931a80dd1",
+      "bytes": 15738682,
+      "files": 45
+    },
+    {
+      "filename": "inputs-11.zip",
+      "sha256": "330b4e4ce1fad7395f899fea34f5acad473e61357225601a09b045e98cad3a6f",
+      "bytes": 17004937,
+      "files": 47
+    },
+    {
+      "filename": "inputs-12.zip",
+      "sha256": "9a1fef9d3482ea2c0e2e3ed20733c499c6fbe862484d5aefd761c1acc0b051b5",
+      "bytes": 16089305,
+      "files": 31
+    },
+    {
+      "filename": "inputs-13.zip",
+      "sha256": "2b00fd3e658ba504ec497016bc0e0bd2e63334358442ad816e3795b2ee829b5c",
+      "bytes": 4255537,
+      "files": 24
+    }
+  ],
+  "sources_with_upstream_labels": [
+    "STIEGER-INF-001/source.csv",
+    "STIEGER-INF-002/source.csv",
+    "STIEGER-INF-003/source.csv",
+    "STIEGER-INF-010/source.csv",
+    "STIEGER-INF-011/source.csv",
+    "STIEGER-INF-012/source.csv",
+    "STIEGER-INF-073/source.csv",
+    "STIEGER-INF-074/source.csv",
+    "STIEGER-INF-075/source.csv",
+    "STIEGER-INF-082/source.csv",
+    "STIEGER-INF-083/source.csv",
+    "STIEGER-INF-084/source.csv"
+  ],
+  "original_label_url": "https://www.bbci.de/competition/iv/results/ds2a/true_labels.zip",
+  "original_label_zip_sha256": "a5e21dbd7e92d2959a3579d18de0defa9ca1a85eec17931118f81dbe141c6302",
+  "input_counts": {
+    "unchanged": 261,
+    "upstream-label-join": 12,
+    "path-metadata-only": 90
+  },
+  "bnci_cells_joined": 6912
+}
