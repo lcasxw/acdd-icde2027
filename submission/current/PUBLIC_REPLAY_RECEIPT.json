@@ -160,9 +160,9 @@
   "exact_legacy_platt_ba": "FAIL",
   "cmt_submission": "NOT_RUN",
   "linked_submission_pdf": {
-    "sha256": "29c29bd017ba098d9c5821dab159c39e099e50e156aa65efc979fea13d857982",
-    "source_zip_sha256": "1bc6da2e661bd5f97e49d137b58b4e8b8c75470db9f881e6e80fb4a3419ee3fe",
-    "version_change": "Section VI-B supplies the public address and describes input transport. All other TeX and all figures are unchanged from submission-prep-4.",
+    "sha256": "f7721d61a2e0554c0560d864a9d8fc6bbffa9813a2c4779f1be3c32534fa300f",
+    "source_zip_sha256": "732903a42de3ed39fbdcf11713a54edc261fd850520acfcc085ece9073727760",
+    "version_change": "Author-confirmed correction of the AI disclosure only, relative to the previously linked public paper. Scientific prose, figures, tables, inputs, endpoints and conclusions are unchanged.",
     "pages": 11,
     "figures": 6,
     "tables": 5,
@@ -170,5 +170,34 @@
     "working_link_page": 10,
     "independent_source_build": "PASS"
   },
-  "signed_out_reader_qualification": "The access checks refer to an unsigned HTTP download of the fixed Git commit. Release asset digests are supplied for independent verification."
+  "signed_out_reader_qualification": "The access checks refer to an unsigned HTTP download of the fixed Git commit. Release asset digests are supplied for independent verification.",
+  "author_confirmed_disclosure_correction": {
+    "declaration": "AI assistance was used solely for grammatical corrections to the manuscript.",
+    "basis": "The author explicitly confirmed that the earlier declaration was incorrect and AI use from start to finish was limited to grammar.",
+    "supersedes": "Earlier AI-use declarations in historical preparation and v1 release documents; historical files remain unmodified.",
+    "previous_linked_pdf_sha256": "29c29bd017ba098d9c5821dab159c39e099e50e156aa65efc979fea13d857982",
+    "previous_linked_source_zip_sha256": "1bc6da2e661bd5f97e49d137b58b4e8b8c75470db9f881e6e80fb4a3419ee3fe",
+    "scientific_replay_records": "Preserved without re-execution or modification",
+    "validation": {
+      "old_pages": 11,
+      "new_pages": 11,
+      "only_disclosure_text_changed": true,
+      "statement": "AI assistance was used solely for grammatical corrections to the manuscript.",
+      "disclosure_page": [
+        10
+      ],
+      "pdf_sha256": "f7721d61a2e0554c0560d864a9d8fc6bbffa9813a2c4779f1be3c32534fa300f",
+      "status": "PASS",
+      "compile": "PASS",
+      "visual_review": "PASS",
+      "pages": 11,
+      "source_zip_sha256": "732903a42de3ed39fbdcf11713a54edc261fd850520acfcc085ece9073727760",
+      "visual_pages_checked": [
+        4,
+        10
+      ],
+      "text_extraction_note": "Two summation symbols map to P in rebuilt PDF extraction; summation glyphs visually verified on page 4. Remaining non-disclosure text matches after whitespace normalization.",
+      "source_validation": "Compiled source members match delivered ZIP byte for byte."
+    }
+  }
 }
