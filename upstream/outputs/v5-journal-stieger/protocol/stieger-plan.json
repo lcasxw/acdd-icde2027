@@ -1,0 +1,1809 @@
+{
+  "schema_version": 2,
+  "study_id": "v5-journal-acdd-stieger-confirmation",
+  "protocol_sha256": "0bc44aefe8fe2e125125fef146d60d187b80a4448d51debf66e6a1623f616cb9",
+  "unit_count": 90,
+  "inference_only": true,
+  "units": [
+    {
+      "unit_id": "STIEGER-INF-001",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eegnet/raw-bn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-002",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eegnet/raw-bn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-003",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eegnet/raw-bn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-004",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eegnet/raw-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-005",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eegnet/raw-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-006",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eegnet/raw-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-007",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eegnet/riemannian-align-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-008",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eegnet/riemannian-align-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-009",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eegnet/riemannian-align-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-010",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eeg_conformer/raw-bn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-011",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eeg_conformer/raw-bn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-012",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eeg_conformer/raw-bn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-013",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eeg_conformer/raw-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-014",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eeg_conformer/raw-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-015",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eeg_conformer/raw-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-016",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eeg_conformer/riemannian-align-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-017",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eeg_conformer/riemannian-align-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-018",
+      "source_protocol": {
+        "id": "single-source/BNCI2014_001-to-Stieger2021",
+        "kind": "single_source",
+        "source": "BNCI2014_001"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/BNCI2014_001-to-Stieger2021/eeg_conformer/riemannian-align-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-019",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eegnet/raw-bn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-020",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eegnet/raw-bn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-021",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eegnet/raw-bn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-022",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eegnet/raw-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-023",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eegnet/raw-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-024",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eegnet/raw-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-025",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eegnet/riemannian-align-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-026",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eegnet/riemannian-align-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-027",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eegnet/riemannian-align-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-028",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eeg_conformer/raw-bn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-029",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eeg_conformer/raw-bn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-030",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eeg_conformer/raw-bn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-031",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eeg_conformer/raw-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-032",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eeg_conformer/raw-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-033",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eeg_conformer/raw-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-034",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eeg_conformer/riemannian-align-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-035",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eeg_conformer/riemannian-align-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-036",
+      "source_protocol": {
+        "id": "single-source/Cho2017-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Cho2017"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Cho2017-to-Stieger2021/eeg_conformer/riemannian-align-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-037",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eegnet/raw-bn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-038",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eegnet/raw-bn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-039",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eegnet/raw-bn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-040",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eegnet/raw-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-041",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eegnet/raw-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-042",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eegnet/raw-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-043",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eegnet/riemannian-align-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-044",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eegnet/riemannian-align-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-045",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eegnet/riemannian-align-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-046",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eeg_conformer/raw-bn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-047",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eeg_conformer/raw-bn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-048",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eeg_conformer/raw-bn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-049",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eeg_conformer/raw-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-050",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eeg_conformer/raw-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-051",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eeg_conformer/raw-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-052",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eeg_conformer/riemannian-align-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-053",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eeg_conformer/riemannian-align-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-054",
+      "source_protocol": {
+        "id": "single-source/PhysionetMI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "PhysionetMI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/PhysionetMI-to-Stieger2021/eeg_conformer/riemannian-align-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-055",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eegnet/raw-bn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-056",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eegnet/raw-bn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-057",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eegnet/raw-bn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-058",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eegnet/raw-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-059",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eegnet/raw-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-060",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eegnet/raw-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-061",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eegnet/riemannian-align-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-062",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eegnet/riemannian-align-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-063",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eegnet/riemannian-align-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-064",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eeg_conformer/raw-bn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-065",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eeg_conformer/raw-bn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-066",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eeg_conformer/raw-bn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-067",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eeg_conformer/raw-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-068",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eeg_conformer/raw-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-069",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eeg_conformer/raw-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-070",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eeg_conformer/riemannian-align-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-071",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eeg_conformer/riemannian-align-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-072",
+      "source_protocol": {
+        "id": "single-source/Lee2019_MI-to-Stieger2021",
+        "kind": "single_source",
+        "source": "Lee2019_MI"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "single-source/Lee2019_MI-to-Stieger2021/eeg_conformer/riemannian-align-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-073",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eegnet/raw-bn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-074",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eegnet/raw-bn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-075",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eegnet/raw-bn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-076",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eegnet/raw-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-077",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eegnet/raw-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-078",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eegnet/raw-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-079",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eegnet/riemannian-align-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-080",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eegnet/riemannian-align-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-081",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eegnet",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eegnet/riemannian-align-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-082",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eeg_conformer/raw-bn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-083",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eeg_conformer/raw-bn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-084",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-bn",
+        "checkpoint_candidate_id": "raw-bn",
+        "preprocessing": "raw",
+        "normalization": "batch_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eeg_conformer/raw-bn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-085",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eeg_conformer/raw-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-086",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eeg_conformer/raw-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-087",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "raw-gn",
+        "checkpoint_candidate_id": "raw-gn",
+        "preprocessing": "raw",
+        "normalization": "group_norm",
+        "access_group": "source_only"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eeg_conformer/raw-gn/seed-43"
+    },
+    {
+      "unit_id": "STIEGER-INF-088",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 17,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eeg_conformer/riemannian-align-gn/seed-17"
+    },
+    {
+      "unit_id": "STIEGER-INF-089",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 29,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eeg_conformer/riemannian-align-gn/seed-29"
+    },
+    {
+      "unit_id": "STIEGER-INF-090",
+      "source_protocol": {
+        "id": "lodo/Stieger2021",
+        "kind": "lodo",
+        "source": null
+      },
+      "backbone": "eeg_conformer",
+      "candidate": {
+        "id": "riemannian-align-gn",
+        "checkpoint_candidate_id": "frozen-access-winner",
+        "preprocessing": "riemannian_alignment",
+        "normalization": "group_norm",
+        "access_group": "full_unlabeled_signal"
+      },
+      "seed": 43,
+      "training_allowed": false,
+      "requires_checkpoint_sha256": true,
+      "output_relative_path": "lodo/Stieger2021/eeg_conformer/riemannian-align-gn/seed-43"
+    }
+  ]
+}

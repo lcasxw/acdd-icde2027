@@ -1,8 +1,10 @@
 # Access-Conditioned Decision Decomposition for Auditing Cross-Dataset Motor-Imagery EEG Decoders
 
-Reproduction files for the ICDE 2027 Experiment, Analysis, and Benchmark submission. The score-replay release is **acdd-public-v1**. The paper and scientific analysis code match the preserved submission-prep-4 candidate.
+Reproduction files for the ICDE 2027 Experiment, Analysis, and Benchmark submission. The score-replay release is **acdd-public-v1**. The paper, fitting, scoring and aggregation match the preserved submission-prep-4 candidate. The public launcher also handles long Windows extraction paths.
 
 [Paper PDF](artifact/candidate.pdf) · [Compilable LaTeX](submission/manuscript_source.zip) · [Submission text and scope statement](submission/submission-text.txt) · [Per-result reproduction guide](artifact/README.md) · [Data sources and terms](DATA_SOURCES.md)
+
+[Original figure scripts and drawing sources](figures/README.md) · [Upstream inference source and model mapping](upstream/README.md)
 
 ## Reproduce the results
 

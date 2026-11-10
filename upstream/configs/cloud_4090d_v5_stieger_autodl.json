@@ -1,0 +1,70 @@
+{
+  "project": "acdd-stieger-inference-v5",
+  "run_namespace": "v5-journal-stieger-confirmation",
+  "seed": 17,
+  "data_root": "runtime/data_root",
+  "mne_cache": "runtime/mne_cache",
+  "run_root": "runtime/run_root",
+  "datasets": [
+    "Stieger2021"
+  ],
+  "expected_subjects": {
+    "Stieger2021": 62
+  },
+  "confirmation": {
+    "protected_datasets": [
+      "Stieger2021"
+    ],
+    "protocol": "configs/v5_journal_acdd_stieger.json",
+    "plan": "outputs/v5-journal-stieger/protocol/stieger-plan.json",
+    "checkpoint_manifest": "locks/v5-stieger-checkpoints.lock.json",
+    "lock": "locks/v5-journal-stieger-v4.lock.json",
+    "technical_amendment": "locks/v5-journal-stieger-local-cache-adapter-v3.lock.json",
+    "compatibility_amendment": "locks/v5-journal-stieger-streaming-adapter-v4.lock.json",
+    "raw_prefetch_completion": "outputs/v5-journal-stieger/protocol/raw-prefetch-completion-v4.json"
+  },
+  "events": [
+    "left_hand",
+    "right_hand"
+  ],
+  "label_map": {
+    "left_hand": 0,
+    "right_hand": 1
+  },
+  "canonical_channels": [
+    "FC3",
+    "FC4",
+    "C3",
+    "Cz",
+    "C4",
+    "CP3",
+    "CPz",
+    "CP4"
+  ],
+  "export_epoch": {
+    "tmin": -1.0,
+    "tmax": 3.0
+  },
+  "model_window": {
+    "tmin": 0.5,
+    "tmax": 2.5
+  },
+  "preprocessing": {
+    "fmin": 4.0,
+    "fmax": 40.0,
+    "sfreq": 250.0
+  },
+  "storage": {
+    "minimum_free_gb": 20.0
+  },
+  "split": {
+    "validation_fraction": 0.2,
+    "minimum_validation_subjects_per_dataset": 1
+  },
+  "training": {
+    "forbidden": true,
+    "batch_size": 256,
+    "num_workers": 8,
+    "max_parameters": 10000000
+  }
+}

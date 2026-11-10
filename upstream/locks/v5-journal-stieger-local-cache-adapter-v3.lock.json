@@ -1,0 +1,20 @@
+{
+  "adapter_source_sha256": "ae504a0a08b359559ae770fa864984ef60727601d589f2da52408ea343a8f7b8",
+  "allowed_technical_change": "replace only Stieger2021.data_path with deterministic ordered paths from the already verified 598-file local cache; retain MOABB MAT parsing and all frozen preprocessing, models, endpoints, statistics, and decision branches",
+  "amendment_script_sha256": "02a9e4c85bdb011a96810247bda9e5a5d0e4366432af1b65008294bf3e72db61",
+  "failure_cause": "Figshare API returned HTTP 403 despite a complete verified local cache",
+  "failure_exclusions_sha256": "215ca4afc5a65cf065fc6a2b5eb5ee1fdf16e69168687c0f61e73cc576f508a8",
+  "failure_log_sha256": "8fc8f9b6febd417338a22a4abb070008ca758049c96e419d7ce113292d4ce15e",
+  "failure_stage": "figshare_file_index_lookup_before_data_path_return",
+  "frozen_at_utc": "2026-08-15T08:43:24.688083+00:00",
+  "lock_payload_sha256": "3413d42f34260a82c41e614ef1b0cc7186cc9a12d159474dbd0b071fb1c0d353",
+  "previous_confirmation_lock_sha256": "0a6c0641febddaf97cd564a4231fe35ece01e5137fa722318cacdc630d8c4f77",
+  "schema_version": 1,
+  "scientific_fields_changed": [],
+  "status": "stieger_local_cache_adapter_amendment_frozen",
+  "target_mat_files_opened_before_amendment": false,
+  "target_predictions_before_amendment": 0,
+  "target_signals_or_labels_inspected_before_amendment": false,
+  "training_before_amendment": false,
+  "triggered_by_target_results": false
+}

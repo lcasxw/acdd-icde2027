@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "acdd_v2_preanalysis_amendment_frozen",
+  "amendment_id": "ACDD-V2-PREANALYSIS-20260815",
+  "frozen_at_utc": "2026-08-14T17:02:54.751258+00:00",
+  "motivation": "reviewer_red_team_before_target_parsing_not_target_results",
+  "original_protocol_sha256": "0acf5c6e7fe673217576f84b1f53fcb2663c1f41465e26e5fdf56e58e91f4131",
+  "amended_protocol_sha256": "0bc44aefe8fe2e125125fef146d60d187b80a4448d51debf66e6a1623f616cb9",
+  "evidence_sha256": "68b86ed6a0d5369980a5afc51726041f6582a0541952cc8d58207a580fef9fb5",
+  "transfer_lock_sha256": {
+    "..\\outputs\\stieger-archive-prefetch-execution-20260814.lock.json": "9694b9362dd59bb80faded278884dc23267c97de5fd1ffc19846948f92a68bcf",
+    "..\\outputs\\stieger-prefetch-concurrency-v2-20260814.lock.json": "76a2ba7852e9acda8e9294cdd9fc40f18c63d5c3a2ff43a3dbb51041f637b1b3",
+    "..\\outputs\\stieger-prefetch-global-queue-v3-20260814.lock.json": "fce286b72de45af14d2b3ba8d260a8f5fe638479138e164ee64acc166d025ace"
+  },
+  "unchanged_scientific_fields": [
+    "dataset",
+    "preprocessing",
+    "source_protocols",
+    "backbones",
+    "candidates",
+    "seeds",
+    "prediction_contract",
+    "endpoints",
+    "response_surface",
+    "decision_branches"
+  ],
+  "target_data_parsed_before_amendment": false,
+  "target_predictions_before_amendment": 0,
+  "allows_training": false,
+  "allows_model_threshold_or_endpoint_reselection": false,
+  "lock_payload_sha256": "d27a8e0ebd97478bb01f0e8bd9dcb36181afc864e8c2d4346d493f9cd86739c5"
+}

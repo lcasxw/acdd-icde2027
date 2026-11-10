@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "status": "stieger_confirmation_frozen",
+  "frozen_at_utc": "2026-08-15T08:45:17.595405+00:00",
+  "confirmatory_dataset": "Stieger2021",
+  "raw_archive_transfer_before_amendment": true,
+  "target_parsing_before_amendment": false,
+  "target_predictions_before_amendment": 0,
+  "allows_training": false,
+  "protocol_sha256": "0bc44aefe8fe2e125125fef146d60d187b80a4448d51debf66e6a1623f616cb9",
+  "plan_sha256": "ece393d9dc3196e148ab483dd0f1cd88adba21c2d6b9bdfedbf4b55c86718f2e",
+  "checkpoint_manifest_sha256": "6a4c2278f1ce1a51acd27e5e12c36f4ce3a7cdd417b337328322dc4e7d5bea82",
+  "preanalysis_amendment_lock_sha256": "ff0d7ad716e838c57f0751a4e4d93c201e761e15c782cf8a0720b253e6db9d02",
+  "technical_amendment_lock_sha256": "7ad4257f6586507ea789ce50b140c2f8e677ac34558836617140bfdffffdccd6",
+  "journal_source_tree_sha256": "25db0a10ecdcadf6c6711e25c1d2db7764ba5e27ac5a06892415b5bb74110b40",
+  "acdd_source_tree_sha256": "f6106fff5571542ed1ec9e4380bbd32dd347c24882ab0065a6ed4d77ecea86d1",
+  "execution_artifact_sha256": {
+    "configs/cloud_4090d_v5_stieger.json": "14400298d58219a960899fb18ede93ec509f49f21063e57ac9d7a026f8a03cee",
+    "configs/cloud_4090d_v5_stieger_autodl.json": "79466b6f6e18b790e86a11ada7a9d122dbe3c9adc5376c998c2310d2a06f4ac6",
+    "analysis/analyze_v5_stieger_confirmation.py": "66f118f43815b20bce45eefef6f16226f5207d7586adbfbac925efdfb48524ed",
+    "analysis/analyze_v5_source_calibration_matrix.py": "1fbb36e1b78d5f108f4313d0c5bfa8342704e2f3d75178eec3c0e6f081660f9a",
+    "analysis/reexport_v5_source_validation_logits.py": "6d6a6512100eb41fbd62c33a33a9beeac2607f9e19d33b585077c268b9461e5a",
+    "analysis/build_v5_stieger_checkpoint_manifest.py": "edab70ea1239aa34f348062f66697afcd8751754d747c24fab6f388aacd0770f",
+    "analysis/freeze_v5_stieger_confirmation.py": "95ec3c8fc6506b996f684ceb8838095e849ad000d00fa3929fe404b00b3a749c",
+    "analysis/freeze_v5_preanalysis_amendment.py": "e71c609365a912fd4d346ea9779b07fc3f0300f6d726dab7ad61e3f2626e89f3",
+    "analysis/run_acdd_v2_synthetic_controls.py": "12b9ebec0f2b32072a2b8318e492b492dad93c6de192586ed37195863b50a2ee",
+    "analysis/preflight_v5_stieger_participant_major.py": "640c1c00db916157fdcca26c37913c7d66e4f1af45e6307037c014000d5d45cc",
+    "analysis/preflight_v5_stieger_raw_cache.py": "b59e3a5c453013e911d27edc16a348d5d46c00b3dc5e4c49da9a717b3972cdc5",
+    "analysis/freeze_v5_stieger_local_cache_amendment.py": "02a9e4c85bdb011a96810247bda9e5a5d0e4366432af1b65008294bf3e72db61",
+    "analysis/finalize_v5_stieger_raw_prefetch.py": "b1d6269f64b6d62632577d5aaf1a2dfb4ed7e3bda02c9b169b83d5f9bbecaed2",
+    "outputs/v5-journal-stieger/protocol/raw-prefetch-completion-v4.json": "3b4fd8e21cc7f34ac4bb434f7b03c6646b22bc4aa12b796a11f5daa2bac57ecb",
+    "outputs/v5-journal-stieger/protocol/participant-major-checkpoint-preflight.json": "768829d4a5c31187cb92fe5bd1746ce3b0e2eb454fd23b77196d19f984f0d870",
+    "outputs/v5-journal-stieger/protocol/raw-cache-preflight-v2.json": "6431f291eef72e526e866aab267cc7b94a49b54aab60c6c08092ab1da583cb9c",
+    "outputs/v5-journal-stieger/protocol/prelocal-adapter-subject-001-export-failure.log": "8fc8f9b6febd417338a22a4abb070008ca758049c96e419d7ce113292d4ce15e",
+    "outputs/v5-journal-stieger/protocol/prelocal-adapter-export-exclusions.jsonl": "215ca4afc5a65cf065fc6a2b5eb5ee1fdf16e69168687c0f61e73cc576f508a8",
+    "locks/v5-journal-stieger-v2.lock.json": "0a6c0641febddaf97cd564a4231fe35ece01e5137fa722318cacdc630d8c4f77",
+    "scripts/cloud/run_v5_stieger_inference.py": "e10e9a63d82f79c9ea6f07af5d642c5f9137feeec89b7a6977d9847d45d134ee",
+    "scripts/cloud/run_v5_stieger_participant_major.py": "5c867ec4b7b80b0574e59d04efd1abb6171a50dedc5d6d94046e24d09e4a3dca",
+    "scripts/cloud/run_v5_stieger_confirmation.sh": "5cf173d1b261de405aa05d50efcfee3865802f686b11bcb0dd1570a3d3254cf7"
+  },
+  "decision_branches": {
+    "A_prefix_sufficient": {
+      "requirements": [
+        "prefix10_suffix_ci_lower_gt_0_for_both_backbones",
+        "at_least_one_backbone_mean_gain_ge_0.02",
+        "at_least_four_of_five_source_protocols_positive_for_each_backbone"
+      ]
+    },
+    "B_batch_access_boundary": {
+      "requirements": [
+        "prefix_suffix_not_confirmed",
+        "full_batch_gain_positive_for_both_backbones",
+        "full_minus_causal_prefix_ci_lower_gt_0"
+      ]
+    },
+    "mixed": {
+      "action": "do_not_submit_to_NMI_first; transfer_to_T-BME_or_JNE_without_reselection"
+    }
+  },
+  "preanalysis_amendment": {
+    "amendment_id": "ACDD-V2-PREANALYSIS-20260815",
+    "amended_at": "2026-08-15T00:20:00+08:00",
+    "timing": "raw_archive_prefetch_in_progress_before_target_parsing_or_prediction",
+    "reason": "reviewer red-team identified that normalized recovery is interpretable only for rank-preserving decision rules and that online access must be defined as a non-anticipating information set",
+    "triggered_by_target_results": false,
+    "target_signals_inspected": false,
+    "target_labels_inspected": false,
+    "completed_target_exports": 0,
+    "completed_target_prediction_units": 0,
+    "unchanged": [
+      "dataset",
+      "preprocessing",
+      "source_protocols",
+      "backbones",
+      "candidates",
+      "seeds",
+      "prediction_contract",
+      "endpoints",
+      "response_surface",
+      "decision_branches"
+    ]
+  },
+  "method_contract": {
+    "name": "Access-Conditioned Decision Decomposition v2",
+    "discrimination_headroom": "D_m=max_tau BA(s_m,tau)-0.5=J_m_star/2",
+    "decision_loss": "E_m=max_tau BA(s_m,tau)-BA(s_m,tau_m)",
+    "exact_identity": "BA_m-0.5=D_m-E_m",
+    "comparison_identity": "Delta_BA=(D_m-D_0)+(E_0-E_m)",
+    "normalized_recovery_scope": "reported only for rank-preserving methods that declare and empirically preserve score order",
+    "auc_role": "AUROC is reported separately and is not equated with D_m",
+    "unlabeled_identifiability_boundary": "the optimal balanced-accuracy threshold is not identified by the unlabeled score marginal without additional assumptions"
+  },
+  "lock_payload_sha256": "51e00bbbdf0c8c78d47c1ccb8a1fc7569185b6c93aa4b83e344d954ee982628b"
+}

@@ -7,6 +7,7 @@ import json
 from pathlib import Path, PurePosixPath
 import shutil
 import struct
+import sys
 from tempfile import TemporaryDirectory
 from urllib.request import Request, urlopen
 from zipfile import ZipFile
@@ -14,6 +15,10 @@ import zlib
 
 
 BASE = Path(__file__).resolve().parent
+sys.path.insert(0, str(BASE / "engine"))
+from public_paths import system_path
+
+BASE = system_path(BASE)
 LABEL_URL = "https://www.bbci.de/competition/iv/results/ds2a/true_labels.zip"
 LABEL_SHA = "a5e21dbd7e92d2959a3579d18de0defa9ca1a85eec17931118f81dbe141c6302"
 
@@ -94,7 +99,8 @@ def main():
     index = json.loads((BASE / "public_input_layout.json").read_bytes())
     with (BASE / "required_inputs.csv").open(encoding="utf-8", newline="") as f:
         expected = {r["path"]: r["sha256"] for r in csv.DictReader(f)}
-    destination = args.out.resolve()
+    destination = system_path(args.out.resolve())
+    args.archives = system_path(args.archives)
     if destination.exists():
         parser.error("Choose a new output directory, or verify the existing inputs with reproduce.py verify-inputs")
     labels = original_labels(args.labels)

@@ -1,0 +1,116 @@
+{
+  "scripts/cloud/run_v5_stieger_inference.py": {
+    "original_sha256": "e10e9a63d82f79c9ea6f07af5d642c5f9137feeec89b7a6977d9847d45d134ee",
+    "public_sha256": "e10e9a63d82f79c9ea6f07af5d642c5f9137feeec89b7a6977d9847d45d134ee"
+  },
+  "scripts/cloud/run_v5_stieger_participant_major.py": {
+    "original_sha256": "5c867ec4b7b80b0574e59d04efd1abb6171a50dedc5d6d94046e24d09e4a3dca",
+    "public_sha256": "5c867ec4b7b80b0574e59d04efd1abb6171a50dedc5d6d94046e24d09e4a3dca"
+  },
+  "src/acdd/__init__.py": {
+    "original_sha256": "fdbf7d329cb883930202e6696ae4dc2cd72600d777313033709ccca7d174a93d",
+    "public_sha256": "fdbf7d329cb883930202e6696ae4dc2cd72600d777313033709ccca7d174a93d"
+  },
+  "src/acdd/metrics.py": {
+    "original_sha256": "a678d1a712cda0596f5b267f95b27e6b9e4cbf3e271e8ad07327f17a7693dd43",
+    "public_sha256": "a678d1a712cda0596f5b267f95b27e6b9e4cbf3e271e8ad07327f17a7693dd43"
+  },
+  "src/acdd/stieger_export.py": {
+    "original_sha256": "75fe608e62a5d5b5d2753a08181bca5a3f6af6da630937f597c15e1f3394f201",
+    "public_sha256": "75fe608e62a5d5b5d2753a08181bca5a3f6af6da630937f597c15e1f3394f201"
+  },
+  "src/acdd/stieger_protocol.py": {
+    "original_sha256": "98eaa6a56a894bbe2d025c2bdd141db3e5736969510e372318ba95e4d9dd1b72",
+    "public_sha256": "98eaa6a56a894bbe2d025c2bdd141db3e5736969510e372318ba95e4d9dd1b72"
+  },
+  "src/aog/__init__.py": {
+    "original_sha256": "17d913e3b7dfed0a60ff93d3f99c17e03c3b994afde8fba845b80c00643d69f8",
+    "public_sha256": "17d913e3b7dfed0a60ff93d3f99c17e03c3b994afde8fba845b80c00643d69f8"
+  },
+  "src/aog/data/__init__.py": {
+    "original_sha256": "3c07c63afa79ca099f92ee04f82cdacedfc31f0ce0165e48269ae1aa83aa0870",
+    "public_sha256": "3c07c63afa79ca099f92ee04f82cdacedfc31f0ce0165e48269ae1aa83aa0870"
+  },
+  "src/aog/data/store.py": {
+    "original_sha256": "27d32aba9177ccfe57d7bc4468153d023daf8612a2e49a3b8cc3ff04fc0e9637",
+    "public_sha256": "27d32aba9177ccfe57d7bc4468153d023daf8612a2e49a3b8cc3ff04fc0e9637"
+  },
+  "src/aog/integrity.py": {
+    "original_sha256": "fb397af43d11c1aaf4163a7cdba29be6b6189cb56b5c262835dfa7940fcad580",
+    "public_sha256": "fb397af43d11c1aaf4163a7cdba29be6b6189cb56b5c262835dfa7940fcad580"
+  },
+  "src/aog/models/__init__.py": {
+    "original_sha256": "97c6ead700c8a4af774ee6056807f68f942eec311a43ec7e54287d0e9d8ed8c1",
+    "public_sha256": "97c6ead700c8a4af774ee6056807f68f942eec311a43ec7e54287d0e9d8ed8c1"
+  },
+  "src/aog/models/eegnet.py": {
+    "original_sha256": "b6fb6bb0f45a1e9296161575e286996e09700faad7a706dcb1f1a5b680421068",
+    "public_sha256": "b6fb6bb0f45a1e9296161575e286996e09700faad7a706dcb1f1a5b680421068"
+  },
+  "src/aog/models/conformer.py": {
+    "original_sha256": "56e1e26fef34231b8a4955c49484f9a640acbe7dd3739dcab12b2193bced1410",
+    "public_sha256": "56e1e26fef34231b8a4955c49484f9a640acbe7dd3739dcab12b2193bced1410"
+  },
+  "src/aog/normalization.py": {
+    "original_sha256": "c4774ecda68558963eff8c66ae4afbf6ba5ab45398de9f33446614a1d8217423",
+    "public_sha256": "c4774ecda68558963eff8c66ae4afbf6ba5ab45398de9f33446614a1d8217423"
+  },
+  "src/aog/types.py": {
+    "original_sha256": "3be08111952b41ad4e34564fd5b3185acf4af63d244cf495945dadaf67631042",
+    "public_sha256": "3be08111952b41ad4e34564fd5b3185acf4af63d244cf495945dadaf67631042"
+  },
+  "configs/v5_journal_acdd_stieger.json": {
+    "original_sha256": "0bc44aefe8fe2e125125fef146d60d187b80a4448d51debf66e6a1623f616cb9",
+    "public_sha256": "0bc44aefe8fe2e125125fef146d60d187b80a4448d51debf66e6a1623f616cb9"
+  },
+  "outputs/v5-journal-stieger/protocol/stieger-plan.json": {
+    "original_sha256": "ece393d9dc3196e148ab483dd0f1cd88adba21c2d6b9bdfedbf4b55c86718f2e",
+    "public_sha256": "ece393d9dc3196e148ab483dd0f1cd88adba21c2d6b9bdfedbf4b55c86718f2e"
+  },
+  "locks/v5-journal-stieger-local-cache-adapter-v3.lock.json": {
+    "original_sha256": "7ad4257f6586507ea789ce50b140c2f8e677ac34558836617140bfdffffdccd6",
+    "public_sha256": "7ad4257f6586507ea789ce50b140c2f8e677ac34558836617140bfdffffdccd6"
+  },
+  "locks/v5-journal-stieger-preanalysis-amendment-v2.lock.json": {
+    "original_sha256": "ff0d7ad716e838c57f0751a4e4d93c201e761e15c782cf8a0720b253e6db9d02",
+    "public_sha256": "ff0d7ad716e838c57f0751a4e4d93c201e761e15c782cf8a0720b253e6db9d02"
+  },
+  "locks/v5-journal-stieger-streaming-adapter-v4.lock.json": {
+    "original_sha256": "f0e0671e8534d4c5cb3f956210ec6683cda74425e71616cdeba9d8de896ab9a2",
+    "public_sha256": "f0e0671e8534d4c5cb3f956210ec6683cda74425e71616cdeba9d8de896ab9a2"
+  },
+  "locks/v5-journal-stieger-v2.lock.json": {
+    "original_sha256": "0a6c0641febddaf97cd564a4231fe35ece01e5137fa722318cacdc630d8c4f77",
+    "public_sha256": "0a6c0641febddaf97cd564a4231fe35ece01e5137fa722318cacdc630d8c4f77"
+  },
+  "locks/v5-journal-stieger-v3.lock.json": {
+    "original_sha256": "17dbcbb5f89a6267778fd076520426d5844a8de953f9668e3cc0ac9b82ab0538",
+    "public_sha256": "17dbcbb5f89a6267778fd076520426d5844a8de953f9668e3cc0ac9b82ab0538"
+  },
+  "locks/v5-journal-stieger-v4.lock.json": {
+    "original_sha256": "401201b02754bcd0745c2c5d22e53ca0847e1ff882c3984a4fff9a450cf174b2",
+    "public_sha256": "401201b02754bcd0745c2c5d22e53ca0847e1ff882c3984a4fff9a450cf174b2"
+  },
+  "locks/v5-journal-stieger.lock.json": {
+    "original_sha256": "cd2456c8b8da46b0aaeadab1f45d3b33c2835d30b57bbe6ec56d66645485d975",
+    "public_sha256": "cd2456c8b8da46b0aaeadab1f45d3b33c2835d30b57bbe6ec56d66645485d975"
+  },
+  "configs/cloud_4090d_v5_stieger.json": {
+    "original_sha256": "8eec8263bf3c6880771d7ab59fafd42d31853d3ae143f822af7620edc34aa177",
+    "public_sha256": "a8effbdf278cbd9965606dd5cbc58e38383d8e7d89adb6e6fde09dc897318744",
+    "changed_path_fields": [
+      "data_root",
+      "mne_cache",
+      "run_root"
+    ]
+  },
+  "configs/cloud_4090d_v5_stieger_autodl.json": {
+    "original_sha256": "052330cd6a8a6df56226ba1ebcb6632762ec361a3565f22bc0e84c0d0d0ac52e",
+    "public_sha256": "a8effbdf278cbd9965606dd5cbc58e38383d8e7d89adb6e6fde09dc897318744",
+    "changed_path_fields": [
+      "data_root",
+      "mne_cache",
+      "run_root"
+    ]
+  }
+}

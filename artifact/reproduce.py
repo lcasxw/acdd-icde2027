@@ -13,6 +13,9 @@ import sys
 
 BASE = Path(__file__).resolve().parent
 sys.path[:0] = [str(BASE / name) for name in ("src", "engine", "analysis")]
+from public_paths import system_path
+
+BASE = system_path(BASE)
 VERSION = "platt-v2-centered-convex-box-20261015"
 POLICIES = ("source_platt", "target_prior_quantile", "platt_em", "rlls_bbse")
 
@@ -331,6 +334,9 @@ def main():
     ap.add_argument("--out",type=Path)
     ap.add_argument("--jobs",type=int,default=1)
     args=ap.parse_args()
+    args.inputs = system_path(args.inputs)
+    if args.out is not None:
+        args.out = system_path(args.out)
     verify_members()
     if args.action=="verify":
         print("PASS: package content hashes and declared calibration version.")

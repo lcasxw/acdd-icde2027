@@ -59,21 +59,6 @@ python -B reproduce.py construct --out run-simulation
 
 ## Raw EEG to scores
 
-Status is NOT_RUN for raw inference and future-signal perturbation. raw_reference/ identifies the recorded export, normalization, example backbone and participant-major inference code. Execution additionally requires the upstream signal cache, licensed checkpoint set, both backbone definitions, historical configuration, lock, session records and a compatible GPU environment. Those inputs are outside this reviewer candidate. The author handoff contains the archived inference source, configs and locks in its historical capsule, and the available frozen weights. The full raw EEG cache must be obtained separately. The compiled paper and frozen-score replay have separate entry points above. Internal locking alone does not establish public preregistration. The historical Platt coefficients and optimizer trace were unavailable. The present snapshots record the declared replacement.
+The original inference and dataset-export sources, both model definitions, recorded settings and provenance are under [upstream](../upstream/README.md). The original EEG recordings are obtained from their respective data providers. The historical runner expects the original checkpoint and lock identities. Public checkpoint copies have portable directory metadata. No EEG inference, raw-signal perturbation or historical Platt parameter recovery is asserted for this publication. The score-replay commands use the public inputs and do not execute the upstream training or inference code.
 
-Obtain original data under the terms of the respective records. [BNCI2014-001](https://bnci-horizon-2020.eu/database/data-sets), [Cho2017](https://doi.org/10.5524/100295), [PhysioNetMI](https://physionet.org/content/eegmmidb/1.0.0/), [Lee2019-MI](https://doi.org/10.5524/100542), [Dreyer2023](https://zenodo.org/records/8089820), [Stieger2021](https://doi.org/10.6084/m9.figshare.13123148.v1).
-
-The listed upstream data records do not host this paper's artifact. The authors handle authorship, disclosure, licensing and the choice of host. The IEEEtran source files retain their original notices.
-
-## Acceptance of a hosted release
-
-No project hosting address has been designated for this edition. When a destination and release scope are specified, record each check separately against the files a signed-out reader can actually obtain.
-
-|Check|Current status|Evidence to retain from the hosted edition|
-|---|---|---|
-|Download|NOT_RUN|Stable artifact URL, date, exact edition, byte count and externally published checksum.|
-|Inputs|NOT_RUN|Verify all members and each command's required inputs against their recorded hashes. Record any restricted inputs and the authorized acquisition route available to the reviewer.|
-|Command execution|NOT_RUN|Extract into a new directory and follow the README using a clean environment. Install declared dependencies from their documented sources. Use no private repository, prepopulated local score directory or developer TeX cache. Record exit codes per command.|
-|Output agreement|NOT_RUN|Compare each scientific output with its reference and tolerance. For Table IV check all means, both interval limits, both counts, the eight rows and the version pinned in MANIFEST.json. Record the tested scope per display.|
-
-A successful package hash check establishes integrity of the bytes that were obtained. Score replay requires the matching authorized inputs. The raw EEG pathway and future-signal perturbation each retain NOT_RUN.
+[Data providers and terms](../DATA_SOURCES.md) · [Figure sources](../figures/README.md) · [Publication and verification](../README.md)

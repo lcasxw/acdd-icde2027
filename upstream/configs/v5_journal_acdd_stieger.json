@@ -1,0 +1,153 @@
+{
+  "schema_version": 2,
+  "study_id": "v5-journal-acdd-stieger-confirmation",
+  "registered_at": "2026-08-13T21:15:00+08:00",
+  "status": "prospectively_amended_before_target_parsing",
+  "paper_type": "Nature Machine Intelligence Analysis",
+  "method_name": "Access-Conditioned Decision Decomposition",
+  "allows_training": false,
+  "allows_model_threshold_or_endpoint_reselection": false,
+  "preanalysis_amendment": {
+    "amendment_id": "ACDD-V2-PREANALYSIS-20260815",
+    "amended_at": "2026-08-15T00:20:00+08:00",
+    "timing": "raw_archive_prefetch_in_progress_before_target_parsing_or_prediction",
+    "reason": "reviewer red-team identified that normalized recovery is interpretable only for rank-preserving decision rules and that online access must be defined as a non-anticipating information set",
+    "triggered_by_target_results": false,
+    "target_signals_inspected": false,
+    "target_labels_inspected": false,
+    "completed_target_exports": 0,
+    "completed_target_prediction_units": 0,
+    "unchanged": [
+      "dataset",
+      "preprocessing",
+      "source_protocols",
+      "backbones",
+      "candidates",
+      "seeds",
+      "prediction_contract",
+      "endpoints",
+      "response_surface",
+      "decision_branches"
+    ]
+  },
+  "method_contract": {
+    "name": "Access-Conditioned Decision Decomposition v2",
+    "discrimination_headroom": "D_m=max_tau BA(s_m,tau)-0.5=J_m_star/2",
+    "decision_loss": "E_m=max_tau BA(s_m,tau)-BA(s_m,tau_m)",
+    "exact_identity": "BA_m-0.5=D_m-E_m",
+    "comparison_identity": "Delta_BA=(D_m-D_0)+(E_0-E_m)",
+    "normalized_recovery_scope": "reported only for rank-preserving methods that declare and empirically preserve score order",
+    "auc_role": "AUROC is reported separately and is not equated with D_m",
+    "unlabeled_identifiability_boundary": "the optimal balanced-accuracy threshold is not identified by the unlabeled score marginal without additional assumptions"
+  },
+  "access_information_sets": {
+    "prefix10_suffix": "threshold is measurable with respect to the first ten unlabeled acquisition-ordered scores and is frozen before trial 11",
+    "prequential": "the threshold for trial t is measurable only with respect to scores 1 through t-1",
+    "session1_to_later": "the threshold is measurable only with respect to unlabeled first-session scores",
+    "full_prior_upper_bound": "uses future target scores and is transductive, not online",
+    "oracle": "uses target labels and is diagnostic only"
+  },
+  "dataset": {
+    "name": "Stieger2021",
+    "previously_inspected": false,
+    "expected_participants": 62,
+    "sessions": "7_or_11",
+    "task": ["left_hand", "right_hand"],
+    "technical_exclusions_only": [
+      "corrupted_file",
+      "missing_any_frozen_common_channel",
+      "fewer_than_30_valid_left_right_trials_in_a_session"
+    ]
+  },
+  "preprocessing": {
+    "canonical_channels": ["FC3", "FC4", "C3", "Cz", "C4", "CP3", "CPz", "CP4"],
+    "sampling_rate_hz": 250.0,
+    "bandpass_hz": [4.0, 40.0],
+    "export_epoch_seconds": [-1.0, 3.0],
+    "model_window_seconds": [0.5, 2.5]
+  },
+  "source_protocols": [
+    {"id": "single-source/BNCI2014_001-to-Stieger2021", "kind": "single_source", "source": "BNCI2014_001"},
+    {"id": "single-source/Cho2017-to-Stieger2021", "kind": "single_source", "source": "Cho2017"},
+    {"id": "single-source/PhysionetMI-to-Stieger2021", "kind": "single_source", "source": "PhysionetMI"},
+    {"id": "single-source/Lee2019_MI-to-Stieger2021", "kind": "single_source", "source": "Lee2019_MI"},
+    {"id": "lodo/Stieger2021", "kind": "lodo", "source": null}
+  ],
+  "backbones": ["eegnet", "eeg_conformer"],
+  "candidates": [
+    {"id": "raw-bn", "checkpoint_candidate_id": "raw-bn", "preprocessing": "raw", "normalization": "batch_norm", "access_group": "source_only"},
+    {"id": "raw-gn", "checkpoint_candidate_id": "raw-gn", "preprocessing": "raw", "normalization": "group_norm", "access_group": "source_only"},
+    {"id": "riemannian-align-gn", "checkpoint_candidate_id": "frozen-access-winner", "preprocessing": "riemannian_alignment", "normalization": "group_norm", "access_group": "full_unlabeled_signal"}
+  ],
+  "seeds": [17, 29, 43],
+  "prediction_contract": {
+    "required_columns": ["logit0", "logit1", "raw_logit", "p0", "p1"],
+    "score_for_auc": "raw_logit=logit1-logit0",
+    "probability_to_logit_reconstruction_allowed": false
+  },
+  "endpoints": {
+    "prefix10_full": {"threshold_access": "first_10_scores", "evaluation": "all_trials", "role": "transductive_diagnostic"},
+    "prefix10_suffix": {"threshold_access": "first_10_scores", "evaluation": "trials_11_onward", "role": "primary_deployment_endpoint"},
+    "prequential": {"threshold_access": "strict_past_scores_only", "evaluation": "trials_11_onward", "role": "causal_online_endpoint"},
+    "session1_to_later": {"threshold_access": "first_session_scores", "evaluation": "later_sessions", "role": "session_transfer_endpoint"},
+    "full_prior_upper_bound": {"threshold_access": "all_scores", "evaluation": "all_trials", "role": "full_batch_upper_bound_not_online"}
+  },
+  "response_surface": {
+    "prefix_lengths": [5, 10, 20, 50, "full"],
+    "positive_priors": [0.3, 0.4, 0.5, 0.6, 0.7],
+    "orders": ["acquisition", "class0_then_class1_diagnostic", "class1_then_class0_diagnostic"],
+    "evaluation_scopes": ["full", "suffix", "prequential"]
+  },
+  "statistics": {
+    "statistical_unit": "participant",
+    "session_nested_within_participant": true,
+    "repeat_aggregation_before_bootstrap": ["source_protocol", "seed"],
+    "bootstrap_hierarchy": ["dataset", "protocol", "participant"],
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 20260813,
+    "weighting_estimands": ["participant_weighted", "dataset_balanced", "protocol_balanced"],
+    "tail_quantiles": [0.05, 0.10],
+    "recovery_fraction_minimum_decision_loss": 0.01,
+    "practical_harm_delta": 0.02,
+    "tail_and_harm_bootstrap_required": true
+  },
+  "deployment_claim_guard": {
+    "scope": "required only for a broad online-recovery claim under branch A",
+    "median_gain_gt": 0.0,
+    "p10_gain_ge": -0.05,
+    "practical_harm_delta": 0.02,
+    "practical_harm_rate_le": 0.25,
+    "failure_action": "retain the measurement result but prohibit a broad participant-level deployment claim and NMI-first branch-A submission"
+  },
+  "primary_confirmation_score_condition": "raw-bn",
+  "decision_branches": {
+    "A_prefix_sufficient": {
+      "requirements": [
+        "prefix10_suffix_ci_lower_gt_0_for_both_backbones",
+        "at_least_one_backbone_mean_gain_ge_0.02",
+        "at_least_four_of_five_source_protocols_positive_for_each_backbone"
+      ]
+    },
+    "B_batch_access_boundary": {
+      "requirements": [
+        "prefix_suffix_not_confirmed",
+        "full_batch_gain_positive_for_both_backbones",
+        "full_minus_causal_prefix_ci_lower_gt_0"
+      ]
+    },
+    "mixed": {"action": "do_not_submit_to_NMI_first; transfer_to_T-BME_or_JNE_without_reselection"}
+  },
+  "derived_contrasts": {
+    "full_minus_causal_prefix": "full_prior_threshold and prequential threshold evaluated on the identical post-prefix suffix",
+    "selection_use": "branch_B_only; never a replacement primary endpoint"
+  },
+  "reporting": {
+    "cross_access_ranking_prohibited": true,
+    "access_partial_order_and_pareto_only": true,
+    "harm_rate_required": true,
+    "practical_harm_rate_required": true,
+    "median_gain_required": true,
+    "p05_and_p10_required": true,
+    "all_exclusions_with_reasons_required": true
+  }
+}

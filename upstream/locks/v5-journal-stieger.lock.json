@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "stieger_confirmation_frozen",
+  "frozen_at_utc": "2026-08-14T05:29:11.133557+00:00",
+  "confirmatory_dataset": "Stieger2021",
+  "dataset_access_before_freeze": false,
+  "allows_training": false,
+  "protocol_sha256": "0acf5c6e7fe673217576f84b1f53fcb2663c1f41465e26e5fdf56e58e91f4131",
+  "plan_sha256": "4c1a51fc2161ad347daa12ca2cdd6090577f50898cc94ccca4f7ed8030fbde20",
+  "checkpoint_manifest_sha256": "14eadc55d0181a5637b89545b834c0b6cc2f5cd61ded77bff542a1488601c875",
+  "journal_source_tree_sha256": "25db0a10ecdcadf6c6711e25c1d2db7764ba5e27ac5a06892415b5bb74110b40",
+  "acdd_source_tree_sha256": "918a6e7995e57e140470932cb8e22b7939d7b10614cb0bb0688bce5ef6bea88a",
+  "execution_artifact_sha256": {
+    "configs/cloud_4090d_v5_stieger.json": "5ecdfc106a96843c82de486b885e9739c5d8128e403f9734da1ce46b0dd1ec9c",
+    "configs/cloud_4090d_v5_stieger_autodl.json": "82254c4b96bc5560118610a909c3dccc3fc1bfbee68e0e8cc18a8e6412e2dae7",
+    "analysis/analyze_v5_stieger_confirmation.py": "cf569ff35e900be8895ca911e780b9b6d5cf74b1c1c74dbbbab1998ece06050b",
+    "analysis/analyze_v5_source_calibration_matrix.py": "1fbb36e1b78d5f108f4313d0c5bfa8342704e2f3d75178eec3c0e6f081660f9a",
+    "analysis/reexport_v5_source_validation_logits.py": "6d6a6512100eb41fbd62c33a33a9beeac2607f9e19d33b585077c268b9461e5a",
+    "analysis/build_v5_stieger_checkpoint_manifest.py": "edab70ea1239aa34f348062f66697afcd8751754d747c24fab6f388aacd0770f",
+    "scripts/cloud/run_v5_stieger_inference.py": "e10e9a63d82f79c9ea6f07af5d642c5f9137feeec89b7a6977d9847d45d134ee",
+    "scripts/cloud/run_v5_stieger_confirmation.sh": "5b4b6f9a37ba721826beb4674d8446b3128670655b348f5247a6eadc435186bd"
+  },
+  "decision_branches": {
+    "A_prefix_sufficient": {
+      "requirements": [
+        "prefix10_suffix_ci_lower_gt_0_for_both_backbones",
+        "at_least_one_backbone_mean_gain_ge_0.02",
+        "at_least_four_of_five_source_protocols_positive_for_each_backbone"
+      ]
+    },
+    "B_batch_access_boundary": {
+      "requirements": [
+        "prefix_suffix_not_confirmed",
+        "full_batch_gain_positive_for_both_backbones",
+        "full_minus_causal_prefix_ci_lower_gt_0"
+      ]
+    },
+    "mixed": {
+      "action": "do_not_submit_to_NMI_first; transfer_to_T-BME_or_JNE_without_reselection"
+    }
+  },
+  "lock_payload_sha256": "45f441704f078e166498bae710236b67a42c3716792b276766fb2526cbd69acb"
+}

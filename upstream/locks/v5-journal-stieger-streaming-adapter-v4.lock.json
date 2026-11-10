@@ -1,0 +1,19 @@
+{
+  "adapter_preflight_sha256": "ef804017a28cf21fed3072706e570279378c79b1cfb33eaa75200531bbb3ffb9",
+  "adapter_source_sha256": "75fe608e62a5d5b5d2753a08181bca5a3f6af6da630937f597c15e1f3394f201",
+  "allowed_technical_change": "retain the MOABB class identity Stieger2021, stream one session at a time, and select the eight frozen channels before constructing MNE Raw to remain within the 2-GiB no-card cgroup; preserve event construction, artifact and trial-length exclusion, filtering, resampling, epochs, models, endpoints, and statistics",
+  "amendment_script_sha256": "1c98d41dd14c437b44512664902fed85c1e3c45431c36e6a31f2290ea4d445b6",
+  "failure_log_sha256": "834fda8ba5d7a685f02bac2f9ab138249a29cef132307c08731fc908d16686ed",
+  "failure_stage": "moabb_dataset_identity_validation_before_data_path_or_mat_open",
+  "frozen_at_utc": "2026-08-21T05:07:59.491242+00:00",
+  "lock_payload_sha256": "7407c02ccbb8b875730561b21f513ee3072da0f0703d5d5f3d5daf719c0d7b15",
+  "previous_confirmation_lock_sha256": "17dbcbb5f89a6267778fd076520426d5844a8de953f9668e3cc0ac9b82ab0538",
+  "schema_version": 1,
+  "scientific_fields_changed": [],
+  "status": "stieger_streaming_adapter_amendment_frozen",
+  "target_mat_files_opened_before_amendment": false,
+  "target_predictions_before_amendment": 0,
+  "target_signals_or_labels_inspected_before_amendment": false,
+  "training_before_amendment": false,
+  "triggered_by_target_results": false
+}

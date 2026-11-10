@@ -1,0 +1,299 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6.7in" height="4.583333333in" viewBox="0 0 482.4 330.0">
+<title>ACDD workflow: independent icon-enhanced review</title>
+<desc>Editable vector schematic. Pictograms are conceptual, not measured data.</desc>
+<rect x="0" y="0" width="482.4" height="330.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="5" y="17" font-family="Arial" font-size="10.5" font-weight="700" font-style="normal" text-anchor="start" fill="#28323D">Access-conditioned decision audit</text>
+<text x="477.4" y="16" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="end" fill="#56616D">Schematic glyphs</text>
+<rect x="4.0" y="28" width="318.0" height="298" rx="4" fill="#FFFFFF" stroke="#A49EA6" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.2 2.5"/>
+<rect x="10.91304347826087" y="34" width="13.826086956521738" height="13" rx="3" fill="#9A939C" stroke="none" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="17.82608695652174" y="43.4" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="middle" fill="#FFFFFF">a</text>
+<text x="29.67701863354037" y="43.3" font-family="Arial" font-size="8.5" font-weight="700" font-style="normal" text-anchor="start" fill="#28323D">Frozen inference &amp; access</text>
+<rect x="12.888198757763975" y="53" width="94.80745341614906" height="44" rx="3" fill="#FCF5D8" stroke="none" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="22.763975155279503" y="60" width="7.900621118012422" height="6" rx="1" fill="#FFFFFF" stroke="#8E814B" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="24.73913043478261" y="62" width="7.900621118012422" height="6" rx="1" fill="#FFFFFF" stroke="#8E814B" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="26.714285714285715" y="64" width="7.900621118012422" height="6" rx="1" fill="#FFFFFF" stroke="#8E814B" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="41.52795031055901" y="67" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="start" fill="#28323D">Discovery</text>
+<text x="60.29192546583851" y="81" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">4 cohorts · n=224</text>
+<text x="60.29192546583851" y="91" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="middle" fill="#56616D">Probability-only</text>
+<rect x="115.59627329192546" y="53" width="94.80745341614906" height="44" rx="3" fill="#EAF1E8" stroke="none" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="129.4223602484472" cy="63.0" rx="2.962732919254658" ry="3.8" fill="none" stroke="#56616D" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="125.472049689441" y="63" width="7.900621118012422" height="6.4" rx="1" fill="#FFFFFF" stroke="#56616D" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="129.4223602484472" cy="66.0" rx="0.7406832298136645" ry="0.75" fill="#56616D" stroke="none" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="144.2360248447205" y="67" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="start" fill="#28323D">Locked</text>
+<text x="163.0" y="81" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">Dreyer · n=87</text>
+<text x="163.0" y="91" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="middle" fill="#56616D">Prespecified test</text>
+<rect x="218.30434782608694" y="53" width="94.80745341614906" height="44" rx="3" fill="#F0EBF8" stroke="none" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="228.1801242236025,60 237.06832298136646,60 237.06832298136646,66 232.62422360248448,70 228.1801242236025,66 228.1801242236025,60" fill="none" stroke="#8371A5" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="230.1552795031056,64 232.1304347826087,66 235.09316770186334,62.5" fill="none" stroke="#8371A5" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="246.944099378882" y="67" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="start" fill="#28323D">Protected</text>
+<text x="265.7080745341615" y="81" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">Stieger · n=62</text>
+<text x="265.7080745341615" y="91" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="middle" fill="#56616D">90 registered units</text>
+<rect x="13.875776397515528" y="110" width="54.316770186335404" height="75" rx="3" fill="#F5F9FB" stroke="#C4D0D9" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="41.03416149068323" y="121" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="middle" fill="#28323D">Target EEG</text>
+<ellipse cx="41.03416149068323" cy="141.0" rx="11.406521739130435" ry="11.55" fill="#FFFFFF" stroke="#56616D" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="38.96024844720497,129.66 41.03416149068323,127.14 43.10807453416149,129.66" fill="none" stroke="#56616D" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="29.627639751552795,136.8 28.0722049689441,137.85 28.0722049689441,144.15 29.627639751552795,145.2" fill="none" stroke="#56616D" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="52.44068322981366,136.8 53.99611801242236,137.85 53.99611801242236,144.15 52.44068322981366,145.2" fill="none" stroke="#56616D" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="36.26416149068323" cy="135.75" rx="1.1925" ry="1.2075" fill="#A9CDDC" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="45.80416149068323" cy="135.75" rx="1.1925" ry="1.2075" fill="#A9CDDC" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="34.81242236024845" cy="141.0" rx="1.1925" ry="1.2075" fill="#A9CDDC" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="41.03416149068323" cy="141.0" rx="1.1925" ry="1.2075" fill="#A9CDDC" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="47.25590062111801" cy="141.0" rx="1.1925" ry="1.2075" fill="#A9CDDC" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="35.849378881987576" cy="146.25" rx="1.1925" ry="1.2075" fill="#A9CDDC" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="41.03416149068323" cy="147.3" rx="1.1925" ry="1.2075" fill="#A9CDDC" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="46.21894409937888" cy="146.25" rx="1.1925" ry="1.2075" fill="#A9CDDC" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="20.788819875776397,162 25.726708074534162,162 28.689440993788818,161 31.652173913043477,164 35.60248447204969,159.0 38.565217391304344,164 42.515527950310556,161 46.46583850931677,162 52.391304347826086,162 61.27950310559006,162" fill="none" stroke="#287BA3" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="20.788819875776397,170 25.726708074534162,170 28.689440993788818,169 31.652173913043477,172 35.60248447204969,167.9 38.565217391304344,172 42.515527950310556,169 46.46583850931677,170 52.391304347826086,170 61.27950310559006,170" fill="none" stroke="#799CBA" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="20.788819875776397,178 25.726708074534162,178 28.689440993788818,177 31.652173913043477,180 35.60248447204969,174.4 38.565217391304344,180 42.515527950310556,177 46.46583850931677,178 52.391304347826086,178 61.27950310559006,178" fill="none" stroke="#82A79E" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="68.19254658385093,148 79.05590062111801,148 79.05590062111801,128 92.88198757763975,128" fill="none" stroke="#56616D" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="92.88198757763975,128 89.62298136645963,126.55 89.62298136645963,129.45" fill="#56616D" stroke="#56616D" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="79.05590062111801,148 79.05590062111801,172 92.88198757763975,172" fill="none" stroke="#56616D" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="92.88198757763975,172 89.62298136645963,170.55 89.62298136645963,173.45" fill="#56616D" stroke="#56616D" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="79.05590062111801" cy="148.0" rx="1.2838509316770186" ry="1.3" fill="#56616D" stroke="none" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="92.88198757763975" y="107" width="114.55900621118012" height="36" rx="3" fill="#F2F7EF" stroke="#A6BCA4" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="99.79503105590062" y="120" width="27.40527950310559" height="15" rx="0.8" fill="#E9F0E5" stroke="#7E9D83" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="105.27608695652174" y="122" width="27.40527950310559" height="15" rx="0.8" fill="#E9F0E5" stroke="#7E9D83" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="110.75714285714285" y="124" width="27.40527950310559" height="15" rx="0.8" fill="#B8CEBC" stroke="#7E9D83" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="119.8922360248447,124 119.8922360248447,139" fill="none" stroke="#8FA892" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="129.02732919254657,124 129.02732919254657,139" fill="none" stroke="#8FA892" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="110.75714285714285,129 138.16242236024843,129" fill="none" stroke="#8FA892" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="110.75714285714285,134 138.16242236024843,134" fill="none" stroke="#8FA892" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="112.58416149068323" y="125" width="7.3080745341614906" height="4" rx="0" fill="#F5F7EC" stroke="#61816A" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="139.9894409937888,132 154.6055900621118,132" fill="none" stroke="#61816A" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="154.6055900621118,132 148.57642857142858,130.55 148.57642857142858,133.45" fill="#61816A" stroke="#61816A" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="156.43260869565216" y="127" width="6.942670807453416" height="12" rx="0.6" fill="#CCE0CB" stroke="#61816A" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="166.11580745341618" y="127" width="6.942670807453416" height="12" rx="0.6" fill="#CCE0CB" stroke="#61816A" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="175.7990062111801" y="127" width="6.942670807453416" height="12" rx="0.6" fill="#CCE0CB" stroke="#61816A" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="185.4822049689441" y="127" width="6.942670807453416" height="12" rx="0.6" fill="#CCE0CB" stroke="#61816A" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="101.77018633540372" cy="114.0" rx="2.1726708074534162" ry="2.2" fill="#287BA3" stroke="none" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="108.6832298136646" y="116.5" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="start" fill="#28323D">EEGNet</text>
+<polyline points="207.44099378881987,128 221.26708074534162,128" fill="none" stroke="#287BA3" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="221.26708074534162,128 218.00807453416147,126.55 218.00807453416147,129.45" fill="#287BA3" stroke="#287BA3" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="221.26708074534162" y="120" width="21.726708074534162" height="15" rx="1" fill="#FFFFFF" stroke="#287BA3" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="224.22981366459626" y="123" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#287BA3" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="228.67391304347825" y="123" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#287BA3" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="233.11801242236024" y="123" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#287BA3" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="237.56211180124222" y="123" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#287BA3" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="242.99378881987576,128 261.7577639751553,128" fill="none" stroke="#287BA3" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="261.7577639751553,128 258.49875776397516,126.55 258.49875776397516,129.45" fill="#287BA3" stroke="#287BA3" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="92.88198757763975" y="151" width="114.55900621118012" height="36" rx="3" fill="#F2F7EF" stroke="#A6BCA4" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="99.79503105590062" y="164" width="27.40527950310559" height="15" rx="0.8" fill="#E9F0E5" stroke="#7E9D83" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="105.27608695652174" y="166" width="27.40527950310559" height="15" rx="0.8" fill="#E9F0E5" stroke="#7E9D83" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="110.75714285714285" y="168" width="27.40527950310559" height="15" rx="0.8" fill="#B8CEBC" stroke="#7E9D83" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="119.8922360248447,168 119.8922360248447,183" fill="none" stroke="#8FA892" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="129.02732919254657,168 129.02732919254657,183" fill="none" stroke="#8FA892" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="110.75714285714285,173 138.16242236024843,173" fill="none" stroke="#8FA892" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="110.75714285714285,178 138.16242236024843,178" fill="none" stroke="#8FA892" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="112.58416149068323" y="169" width="7.3080745341614906" height="4" rx="0" fill="#F5F7EC" stroke="#61816A" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="139.9894409937888,176 154.6055900621118,176" fill="none" stroke="#61816A" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="154.6055900621118,176 148.57642857142858,174.55 148.57642857142858,177.45" fill="#61816A" stroke="#61816A" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="156.43260869565216" y="171" width="6.942670807453416" height="12" rx="0.6" fill="#D8D0F0" stroke="#8A78A5" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="166.11580745341618" y="171" width="6.942670807453416" height="12" rx="0.6" fill="#D1E3D1" stroke="#8A78A5" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="175.7990062111801" y="171" width="6.942670807453416" height="12" rx="0.6" fill="#F4E7B9" stroke="#8A78A5" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="185.4822049689441" y="171" width="6.942670807453416" height="12" rx="0.6" fill="#D2DCEB" stroke="#8A78A5" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="160.08664596273292,169 160.08664596273292,166 189.31894409937888,166 189.31894409937888,169" fill="none" stroke="#77638F" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="169.7698447204969,166 169.7698447204969,169" fill="none" stroke="#77638F" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="179.45304347826087,166 179.45304347826087,169" fill="none" stroke="#77638F" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="101.77018633540372,155.4 104.33788819875775,158 101.77018633540372,160.6 99.20248447204969,158" fill="#CE914F" stroke="#CE914F" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="108.6832298136646" y="160.5" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="start" fill="#28323D">EEG-Conformer</text>
+<polyline points="207.44099378881987,172 221.26708074534162,172" fill="none" stroke="#CE914F" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="221.26708074534162,172 218.00807453416147,170.55 218.00807453416147,173.45" fill="#CE914F" stroke="#CE914F" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="221.26708074534162" y="164" width="21.726708074534162" height="15" rx="1" fill="#FFFFFF" stroke="#CE914F" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="224.22981366459626" y="167" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#CE914F" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="228.67391304347825" y="167" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#CE914F" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="233.11801242236024" y="167" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#CE914F" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="237.56211180124222" y="167" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#CE914F" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="242.99378881987576,172 261.7577639751553,172" fill="none" stroke="#CE914F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="261.7577639751553,172 258.49875776397516,170.55 258.49875776397516,173.45" fill="#CE914F" stroke="#CE914F" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="232.1304347826087" y="115" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#56616D">Scores</text>
+<rect x="261.7577639751553" y="107" width="51.35403726708074" height="80" rx="3" fill="#FBFCFD" stroke="#C7D0D9" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="271.63354037267084" cy="128.0" rx="2.1726708074534162" ry="2.2" fill="#287BA3" stroke="none" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="279.53416149068323" y="122" width="21.726708074534162" height="12" rx="1" fill="#FFFFFF" stroke="#287BA3" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="283.48447204968943,126 297.3105590062112,126" fill="none" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="283.48447204968943,129 297.3105590062112,129" fill="none" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="283.48447204968943,132 297.3105590062112,132" fill="none" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="271.6335403726708,169.4 274.2012422360249,172 271.6335403726708,174.6 269.06583850931673,172" fill="#CE914F" stroke="#CE914F" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="279.53416149068323" y="166" width="21.726708074534162" height="12" rx="1" fill="#FFFFFF" stroke="#CE914F" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="283.48447204968943,170 297.3105590062112,170" fill="none" stroke="#CE914F" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="283.48447204968943,173 297.3105590062112,173" fill="none" stroke="#CE914F" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="283.48447204968943,176 297.3105590062112,176" fill="none" stroke="#CE914F" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="287.4347826086956" y="144" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">Separate</text>
+<text x="287.4347826086956" y="153" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">audits</text>
+<ellipse cx="50.41614906832298" cy="195.25" rx="2.222049689440994" ry="2.8499999999999996" fill="none" stroke="#287BA3" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="47.453416149068325" y="195.25" width="5.925465838509316" height="4.800000000000001" rx="1" fill="#FFFFFF" stroke="#287BA3" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="50.41614906832299" cy="197.5" rx="0.5555124223602484" ry="0.5625" fill="#287BA3" stroke="none" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="60.29192546583851" y="200" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="start" fill="#56616D">Frozen · no retraining / reselection</text>
+<polyline points="287.4347826086956,187 287.4347826086956,208 60.29192546583851,208" fill="none" stroke="#56616D" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="60.29192546583851,208 60.29192546583851,216" fill="none" stroke="#287BA3" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="60.29192546583851,216 61.72391304347826,212.7 58.85993788819875,212.7" fill="#287BA3" stroke="#287BA3" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="163.0,208 163.0,216" fill="none" stroke="#67717E" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="163.0,216 164.43198757763975,212.7 161.56801242236025,212.7" fill="#67717E" stroke="#67717E" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="265.7080745341615,208 265.7080745341615,216" fill="none" stroke="#B65361" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="265.7080745341615,216 267.1400621118012,212.7 264.27608695652174,212.7" fill="#B65361" stroke="#B65361" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="12.888198757763975" y="217" width="94.80745341614906" height="80" rx="3" fill="#E8F2F7" stroke="#287BA3" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="60.29192546583851" y="229" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="middle" fill="#287BA3">Non-anticipating</text>
+<rect x="115.59627329192546" y="217" width="94.80745341614906" height="80" rx="3" fill="#F0F0ED" stroke="#67717E" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="163.0" y="229" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="middle" fill="#67717E">Complete batch</text>
+<rect x="218.30434782608694" y="217" width="94.80745341614906" height="80" rx="3" fill="#F9EBEE" stroke="#B65361" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="265.7080745341615" y="229" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="middle" fill="#B65361">Label-informed</text>
+<polyline points="27.701863354037265,238.0 41.13291925465838,238.0 46.16956521739131,244.8 41.13291925465838,251.6 27.701863354037265,251.6 27.701863354037265,238.0" fill="none" stroke="#287BA3" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="40.29347826086956" cy="244.8" rx="1.2591614906832298" ry="1.275" fill="#FFFFFF" stroke="#287BA3" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="26.714285714285715,236 47.453416149068325,254" fill="none" stroke="#287BA3" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="48.440993788819874,246 62.267080745341616,246" fill="none" stroke="#287BA3" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="60.29192546583851,241 60.29192546583851,251" fill="none" stroke="#287BA3" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="69.18012422360248" y="237" width="22.220496894409937" height="18.0" rx="2" fill="#FFFFFF" stroke="#287BA3" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="72.73540372670807,242.4 87.84534161490683,242.4" fill="none" stroke="#287BA3" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="78.06832298136645" cy="242.4" rx="1.5998757763975155" ry="1.62" fill="#FFFFFF" stroke="#287BA3" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="72.73540372670807,249.6 87.84534161490683,249.6" fill="none" stroke="#287BA3" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="84.29006211180123" cy="249.6" rx="1.5998757763975155" ry="1.62" fill="#FFFFFF" stroke="#287BA3" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="60.29192546583851" y="266" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">At the score layer</text>
+<rect x="17.82608695652174" y="271" width="41.47826086956522" height="10" rx="2" fill="#FFFFFF" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="38.565217391304344" y="278.38" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="middle" fill="#287BA3">Source-only</text>
+<rect x="61.27950310559006" y="271" width="41.47826086956522" height="10" rx="2" fill="#FFFFFF" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="82.01863354037268" y="278.38" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="middle" fill="#287BA3">Prefix/suffix</text>
+<rect x="17.82608695652174" y="283" width="41.47826086956522" height="10" rx="2" fill="#FFFFFF" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="38.565217391304344" y="290.38" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="middle" fill="#287BA3">Strict-past</text>
+<rect x="61.27950310559006" y="283" width="41.47826086956522" height="10" rx="2" fill="#FFFFFF" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="82.01863354037268" y="290.38" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="middle" fill="#287BA3">Session-fwd</text>
+<rect x="132.38509316770185" y="236" width="26.17080745341615" height="15" rx="1" fill="#FFFFFF" stroke="#67717E" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="130.40993788819875" y="238" width="26.17080745341615" height="15" rx="1" fill="#FFFFFF" stroke="#67717E" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="128.43478260869566" y="240" width="26.17080745341615" height="15" rx="1" fill="#FFFFFF" stroke="#67717E" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="131.3975155279503" y="243" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#67717E" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="135.8416149068323" y="243" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#67717E" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="140.28571428571428" y="243" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#67717E" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="144.72981366459626" y="243" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#67717E" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="149.17391304347825" y="243" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#67717E" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="160.03726708074535,247 173.86335403726707,247" fill="none" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="173.86335403726707,247 170.60434782608695,245.55 170.60434782608695,248.45" fill="#67717E" stroke="#67717E" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="177.8136645962733" y="237" width="22.220496894409937" height="18.0" rx="2" fill="#FFFFFF" stroke="#67717E" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="181.36894409937887,242.4 196.47888198757764,242.4" fill="none" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="186.70186335403724" cy="242.4" rx="1.5998757763975155" ry="1.62" fill="#FFFFFF" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="181.36894409937887,249.6 196.47888198757764,249.6" fill="none" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="192.92360248447204" cy="249.6" rx="1.5998757763975155" ry="1.62" fill="#FFFFFF" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="163.0" y="266" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">All target scores</text>
+<text x="163.0" y="278" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#67717E">Transductive reference</text>
+<rect x="138.31055900621118" y="283" width="49.378881987577635" height="10" rx="2" fill="#FFFFFF" stroke="#67717E" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="163.0" y="290.38" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="middle" fill="#67717E">Not online</text>
+<rect x="224.22981366459626" y="240" width="17.282608695652172" height="15" rx="1" fill="#FFFFFF" stroke="#B65361" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="227.1925465838509" y="243" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#B65361" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="231.63664596273293" y="243" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#B65361" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="236.08074534161491" y="243" width="2.863975155279503" height="9" rx="0.3" fill="#CFDFE8" stroke="#B65361" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="249.90683229813664,240.0 259.78260869565213,240.0 263.4860248447205,245.0 259.78260869565213,250.0 249.90683229813664,250.0 249.90683229813664,240.0" fill="none" stroke="#B65361" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="259.1653726708074" cy="245.0" rx="0.9258540372670807" ry="0.9375" fill="#FFFFFF" stroke="#B65361" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="245.95652173913044" y="250" font-family="Arial" font-size="8" font-weight="400" font-style="normal" text-anchor="middle" fill="#B65361">+</text>
+<polyline points="265.7080745341615,247 273.6086956521739,247" fill="none" stroke="#B65361" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="273.6086956521739,247 270.34968944099376,245.55 270.34968944099376,248.45" fill="#B65361" stroke="#B65361" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="277.55900621118013" y="237" width="22.220496894409937" height="18.0" rx="2" fill="#FFFFFF" stroke="#B65361" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="281.11428571428576,242.4 296.2242236024844,242.4" fill="none" stroke="#B65361" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="286.4472049689441" cy="242.4" rx="1.5998757763975155" ry="1.62" fill="#FFFFFF" stroke="#B65361" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="281.11428571428576,249.6 296.2242236024844,249.6" fill="none" stroke="#B65361" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="292.6689440993789" cy="249.6" rx="1.5998757763975155" ry="1.62" fill="#FFFFFF" stroke="#B65361" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="265.7080745341615" y="266" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">Scores + labels</text>
+<text x="265.7080745341615" y="278" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#B65361">Oracle diagnostic</text>
+<rect x="232.1304347826087" y="283" width="67.15527950310559" height="10" rx="2" fill="#FFFFFF" stroke="#B65361" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="265.7080745341615" y="290.38" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="middle" fill="#B65361">Not deployable</text>
+<text x="163.0" y="308" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#56616D">Compare within each access contract</text>
+<text x="86.5040283203125" y="320" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="start" fill="#56616D">Protected prefix: </text>
+<text x="143.1971435546875" y="320" font-family="Arial" font-size="7.5" font-weight="700" font-style="normal" text-anchor="start" fill="#B65361">MIXED</text>
+<text x="166.9495849609375" y="320" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="start" fill="#56616D"> · below the 2-pp gate</text>
+<rect x="330" y="28" width="148.4" height="100" rx="4" fill="#FFFFFF" stroke="#8BA592" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.2 2.5"/>
+<rect x="337" y="34" width="14" height="13" rx="3" fill="#7E9B86" stroke="none" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="344" y="43.4" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="middle" fill="#FFFFFF">b</text>
+<text x="356" y="43.3" font-family="Arial" font-size="8.5" font-weight="700" font-style="normal" text-anchor="start" fill="#28323D">Protected prefix protocol</text>
+<rect x="342" y="53" width="46" height="12" rx="2" fill="#F1F5ED" stroke="#61816A" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="365.0" y="61.55" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#61816A">Raw-BN</text>
+<text x="418" y="61" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#56616D">Freeze policy</text>
+<ellipse cx="406.5" cy="67.16" rx="2.16" ry="2.7359999999999998" fill="none" stroke="#61816A" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="403.62" y="67.16" width="5.76" height="4.608" rx="1" fill="#FFFFFF" stroke="#61816A" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="406.5" cy="69.32" rx="0.54" ry="0.54" fill="#61816A" stroke="none" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="343.0" y="77" width="3.7" height="13" rx="0.4" fill="#BEDAE6" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="348.0" y="77" width="3.7" height="13" rx="0.4" fill="#BEDAE6" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="353.0" y="77" width="3.7" height="13" rx="0.4" fill="#BEDAE6" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="358.0" y="77" width="3.7" height="13" rx="0.4" fill="#BEDAE6" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="363.0" y="77" width="3.7" height="13" rx="0.4" fill="#BEDAE6" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="368.0" y="77" width="3.7" height="13" rx="0.4" fill="#BEDAE6" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="373.0" y="77" width="3.7" height="13" rx="0.4" fill="#BEDAE6" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="378.0" y="77" width="3.7" height="13" rx="0.4" fill="#BEDAE6" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="383.0" y="77" width="3.7" height="13" rx="0.4" fill="#BEDAE6" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="388.0" y="77" width="3.7" height="13" rx="0.4" fill="#BEDAE6" stroke="#287BA3" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="393,83.5 420,83.5" fill="none" stroke="#61816A" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="420,83.5 416.7,82.05 416.7,84.95" fill="#61816A" stroke="#61816A" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="424.0" y="77" width="3.7" height="13" rx="0.4" fill="#D7E7D0" stroke="#61816A" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="429.0" y="77" width="3.7" height="13" rx="0.4" fill="#D7E7D0" stroke="#61816A" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="434.0" y="77" width="3.7" height="13" rx="0.4" fill="#D7E7D0" stroke="#61816A" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="439.0" y="77" width="3.7" height="13" rx="0.4" fill="#D7E7D0" stroke="#61816A" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="444.0" y="77" width="3.7" height="13" rx="0.4" fill="#D7E7D0" stroke="#61816A" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="449.0" y="77" width="3.7" height="13" rx="0.4" fill="#D7E7D0" stroke="#61816A" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="457" y="84" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="start" fill="#61816A">...</text>
+<text x="367.5" y="101" font-family="Arial" font-size="7.5" font-weight="700" font-style="normal" text-anchor="middle" fill="#287BA3">First 10: fit</text>
+<text x="443" y="101" font-family="Arial" font-size="7.5" font-weight="700" font-style="normal" text-anchor="middle" fill="#61816A">Suffix: test</text>
+<text x="367.5" y="115" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#56616D">Unlabeled</text>
+<polyline points="403.0,108.0 409.8,108.0 412.35,111.4 409.8,114.8 403.0,114.8 403.0,108.0" fill="none" stroke="#61816A" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="409.375" cy="111.4" rx="0.6375" ry="0.6375" fill="#FFFFFF" stroke="#61816A" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="416.5" y="115" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="start" fill="#61816A">Labels: eval only</text>
+<rect x="330" y="136" width="148.4" height="87" rx="4" fill="#FFFFFF" stroke="#A091BC" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.2 2.5"/>
+<rect x="337" y="142" width="14" height="13" rx="3" fill="#9585B4" stroke="none" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="344" y="151.4" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="middle" fill="#FFFFFF">c</text>
+<text x="356" y="151.3" font-family="Arial" font-size="8.5" font-weight="700" font-style="normal" text-anchor="start" fill="#28323D">Decision decomposition</text>
+<rect x="342" y="159" width="29" height="43" rx="3" fill="#EAF3F8" stroke="none" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="382" y="159" width="41" height="43" rx="3" fill="#EDF3E9" stroke="none" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="434" y="159" width="32" height="43" rx="3" fill="#F2EDF8" stroke="none" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="349" y="174" font-family="Arial" font-size="10.5" font-weight="400" font-style="italic" text-anchor="start" fill="#287BA3">G</text>
+<text x="357.167236328125" y="176.1" font-family="Arial" font-size="7" font-weight="400" font-style="italic" text-anchor="start" fill="#287BA3">A</text>
+<text x="376.5" y="174" font-family="Arial" font-size="10.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">=</text>
+<text x="385" y="174" font-family="Arial" font-size="10.5" font-weight="400" font-style="italic" text-anchor="start" fill="#61816A">L</text>
+<text x="390.839599609375" y="176.1" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="start" fill="#61816A">decision</text>
+<text x="428.5" y="174" font-family="Arial" font-size="10.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">−</text>
+<text x="444" y="174" font-family="Arial" font-size="10.5" font-weight="400" font-style="italic" text-anchor="start" fill="#8A78A5">L</text>
+<text x="449.839599609375" y="176.1" font-family="Arial" font-size="7" font-weight="400" font-style="italic" text-anchor="start" fill="#8A78A5">A</text>
+<text x="356.5" y="188" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#287BA3">BA</text>
+<text x="356.5" y="198" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#287BA3">gain</text>
+<text x="402.5" y="188" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#61816A">Default</text>
+<text x="402.5" y="198" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#61816A">loss</text>
+<text x="450" y="188" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#8A78A5">Signed</text>
+<text x="450" y="198" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#8A78A5">residual</text>
+<text x="342" y="215" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="start" fill="#56616D">Same trials · label-informed oracle</text>
+<rect x="330" y="231" width="148.4" height="95" rx="4" fill="#FFFFFF" stroke="#959DA9" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.2 2.5"/>
+<rect x="337" y="237" width="14" height="13" rx="3" fill="#89929F" stroke="none" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="344" y="246.4" font-family="Arial" font-size="8" font-weight="700" font-style="normal" text-anchor="middle" fill="#FFFFFF">d</text>
+<text x="356" y="246.3" font-family="Arial" font-size="8.5" font-weight="700" font-style="normal" text-anchor="start" fill="#28323D">Participant summary</text>
+<text x="404.2" y="257" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#56616D">Within each backbone</text>
+<rect x="346" y="262.0" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="353" y="262.0" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="360" y="262.0" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="346" y="266.6" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="353" y="266.6" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="360" y="266.6" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="346" y="271.2" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="353" y="271.2" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="360" y="271.2" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="346" y="275.8" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="353" y="275.8" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="360" y="275.8" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="346" y="280.4" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="353" y="280.4" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="360" y="280.4" width="5.8" height="3.7" rx="0.3" fill="#CCDDE4" stroke="#8EA6B1" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="369,274 390,274" fill="none" stroke="#56616D" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="390,274 386.7,272.55 386.7,275.45" fill="#56616D" stroke="#56616D" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="400.0" cy="264.0" rx="2.9899999999999998" ry="2.9899999999999998" fill="#FFFFFF" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="400,266.99 400,276.65" fill="none" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="394.595,271.36 405.405,271.36" fill="none" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="410,274 427,274" fill="none" stroke="#56616D" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="427,274 423.7,272.55 423.7,275.45" fill="#56616D" stroke="#56616D" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="437.0" cy="265.0" rx="2.08" ry="2.08" fill="#FFFFFF" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="437,267.08 437,273.8" fill="none" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="433.24,270.12 440.76,270.12" fill="none" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="448.0" cy="262.0" rx="2.08" ry="2.08" fill="#FFFFFF" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="448,264.08 448,270.8" fill="none" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="444.24,267.12 451.76,267.12" fill="none" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="459.0" cy="265.0" rx="2.08" ry="2.08" fill="#FFFFFF" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="459,267.08 459,273.8" fill="none" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="455.24,270.12 462.76,270.12" fill="none" stroke="#67717E" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="356" y="294" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">5 conditions</text>
+<text x="356" y="304" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">× 3 seeds</text>
+<text x="400" y="294" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">Participant</text>
+<text x="400" y="304" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">mean</text>
+<text x="448" y="294" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">62 participants</text>
+<text x="448" y="304" font-family="Arial" font-size="7.5" font-weight="400" font-style="normal" text-anchor="middle" fill="#28323D">Summary</text>
+<text x="404.2" y="318" font-family="Arial" font-size="7" font-weight="400" font-style="normal" text-anchor="middle" fill="#56616D">Raw-BN: 30 of 90 registered units</text>
+</svg>

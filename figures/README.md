@@ -1,0 +1,5 @@
+# Figure sources
+
+The six submitted vectors are in [the manuscript figures directory](../artifact/manuscript/figures/). The original [source bundle](figure_sources_v50.zip) contains 58 files, including plotting scripts, style settings, drawing specifications, plotted numerical tables and the seven vectors of the older paper. The conference paper uses six figures. In order, these correspond to the original figures 1, 2, 3, 5, 6 and 7. The original figure count and archive are preserved for provenance.
+
+The conference [figure annotation script](restore_v50_figures.py) records the local changes to the framework, interval label and aggregation labels. It takes an extracted original paper directory, an output directory and a plotting interpreter. The two SVGs and the native workflow specification alongside it are the retained editing sources. Reference chart inputs describe the artwork; the calculations from frozen scores are documented in the [reproduction guide](../artifact/README.md). No figure was redesigned for the public upload.
