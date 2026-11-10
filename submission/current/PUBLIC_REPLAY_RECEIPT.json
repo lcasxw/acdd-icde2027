@@ -1,0 +1,174 @@
+{
+  "edition": "acdd-public-v1",
+  "repository": "https://github.com/lcasxw/acdd-icde2027",
+  "immutable_commit": "da19ba91f0fc64cf3ba1251aa738dd517ff75c67",
+  "git_tree": "6e18013798aab75982bdd1962f59b0b02bd41fa1",
+  "checked_utc": "2026-11-10T14:50:01.478433+00:00",
+  "access": "Unsigned GitHub snapshot download; no cookies or tokens. Fresh Python environment, NumPy installed from PyPI with the pip cache disabled. Each scientific command used only files from that snapshot and the original competition cue archive.",
+  "download": {
+    "status": "PASS",
+    "source": "https://codeload.github.com/lcasxw/acdd-icde2027/zip/da19ba91f0fc64cf3ba1251aa738dd517ff75c67",
+    "bytes": 210896846,
+    "sha256": "1f6c08f2c8b9b449bfa19af5612bbc2a32366cb99cb07cd87998468763c6ae04",
+    "git_tracked_files": 130
+  },
+  "materialized_inputs": {
+    "status": "PASS",
+    "files": 363,
+    "original_scientific_files_byte_identical": 273,
+    "portable_checkpoints": 90,
+    "externally_restored_source_files": 12,
+    "upstream_label_bytes": 7197
+  },
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "2.2.6"
+  },
+  "entry_points": {
+    "known-prior": {
+      "status": "PASS",
+      "start_utc": "2026-11-10T14:43:55.137092+00:00",
+      "finish_utc": "2026-11-10T14:43:55.696133+00:00",
+      "files_compared": 1,
+      "output_sha256": {
+        "known_prior_witness.csv": "0e20791ef8744e81f54e915a8e0e2553c09cbbbb0ebd00dc21511a55ca20d2b8"
+      },
+      "byte_differences": []
+    },
+    "signal-controls": {
+      "status": "PASS",
+      "start_utc": "2026-11-10T14:43:55.137092+00:00",
+      "finish_utc": "2026-11-10T14:43:55.759527+00:00",
+      "files_compared": 2,
+      "output_sha256": {
+        "tta.csv": "d370ba83be7f8dad0891d8b28ef0a806e6ba250288a4ce19c7180a7e88262ea6",
+        "ttime.csv": "54090355d79fa051cd05fdbe043298de8f80fccd66d5115c4ef7672545d1eb0a"
+      },
+      "byte_differences": []
+    },
+    "table-iv": {
+      "status": "PASS",
+      "start_utc": "2026-11-10T14:43:55.137092+00:00",
+      "finish_utc": "2026-11-10T14:45:36.189642+00:00",
+      "files_compared": 2,
+      "output_sha256": {
+        "source_cutoffs.csv": "33018cfc97bdccf22d9324a424ae850536897606eef8607ef6483ee323949baf",
+        "table_iv.csv": "46ec51464cad07538eb66d7d632bad0b926df211ac6e50827cc28b6fd7bc017c"
+      },
+      "byte_differences": []
+    },
+    "scores": {
+      "status": "PASS",
+      "start_utc": "2026-11-10T14:43:55.138093+00:00",
+      "finish_utc": "2026-11-10T14:50:01.349559+00:00",
+      "files_compared": 15,
+      "output_sha256": {
+        "absolute.csv": "9ea2b725792e97fc30b1758bfa34d9eae724d87041ef8bb18bd595a9442245d0",
+        "access.csv": "ec0d01aaa18043aa39622e05ea58a8b20b0ba8d1a960995fe264288045d360e3",
+        "degradation_by_aggregation.csv": "0bf93afb38f7fda0d82a4535c4dc22199f40a0f9a6f2617674b66be04e950fa7",
+        "fig3_stieger.csv": "ec4c3a3baa603ec0b3044529375900920fe086a1929c438bb571fcf05e7d3d66",
+        "fig4_radar.csv": "6d0a41631dc07e67e408090d3a5fb14a754f56c1412a47938a679de6bd071676",
+        "fig5_oracle.csv": "6db18e3a5801b20cf3f5a4753929fe9366c33a1b18eaa726ad387b652f3096c5",
+        "fig6_quartiles.csv": "0ca8f4b5620dc1036db94d96cc814d963d07a92f404bcf46c19504cfec1b58b6",
+        "moving.csv": "43b788313d8e39c9c9a0c1b35c52e423fcbf842e44d9ac20b0a38412ee44d07d",
+        "table_v.csv": "21b1c0c572f7c377e55e4e53dbede184bc8873357ae4ea53565c26d40ee5d87b",
+        "scores/audit.json": "1e95a06594f8745bef3e7c892fb8d9110051c86f0108fc4afbe4d42152d96a5f",
+        "scores/common_suffix.csv": "9b18b1ecb4c31eb904c21ed0a3c806d02e5541a6d7e979f86cd2319d395d28cc",
+        "scores/common_summary.csv": "496e2034630690423f1fe12e77af1ccd86a55ed2329fa35eab8a6679b2a516a7",
+        "scores/fixed_models.csv": "9418221ab4d8bb75e9d417955b790f5c201bbb3eb98afea4865e1bc381eea1ea",
+        "scores/oracles.csv": "954c6d860b4b051a0bd018a90c44625912f7c51a410c53e77cdc62608cf11a8c",
+        "scores/protected.csv": "5eab8370745d20ca6835bc934c445264b9ed0e2c36d77a3819172566db0867f3"
+      },
+      "byte_differences": []
+    },
+    "historical": {
+      "status": "PASS",
+      "start_utc": "2026-11-10T14:43:55.138093+00:00",
+      "finish_utc": "2026-11-10T14:49:28.758218+00:00",
+      "files_compared": 7,
+      "output_sha256": {
+        "dreyer_clustered_effects.csv": "92f85a62488a4d3041af9a771802dbb5ffc08601d2e08f09e89e895b399398ce",
+        "dreyer_confirmation.json": "7508863ca8fef17cd0f2498803b021fa700182d7d4b76471738437a7f31d7f50",
+        "dreyer_subject_metrics.csv": "29b2027df59378fb09c08a99ee67161cba105be8ecbfc3c3c44e06e66c83ad6c",
+        "historical/historical_estimands.json": "4c4815a2766f0353d45a1c83f12c64066da721df11709c0fb937ffe1f9923706",
+        "historical/historical_estimands_manifest.json": "14a970ea599c760782e49c9643b75ca7edc90dfaada4c368bbff73f2a5553505",
+        "historical/historical_participant_contrasts.csv": "1758cb028997c851f88ad6c9e0845fab12fd23de39e121a7cbec77dc8499df61",
+        "historical/historical_subject_aggregates.csv": "7996e811053fdc04f97ab8531bb8aeb3e00febc935f859d77abcec8b47462b7c"
+      },
+      "byte_differences": [
+        "historical/historical_estimands.json",
+        "historical/historical_estimands_manifest.json"
+      ]
+    }
+  },
+  "historical_portability": "Historical estimand file paths and the corresponding digest depend on the chosen run directory. The input content hashes and every scientific field matched.",
+  "table_iv": {
+    "rows": 8,
+    "output_sha256": "46ec51464cad07538eb66d7d632bad0b926df211ac6e50827cc28b6fd7bc017c",
+    "eegnet_em_below_minus_2pp": 29,
+    "conformer_source_platt_negative": 19
+  },
+  "figure_5": {
+    "status": "PASS",
+    "recomputed_points": 8,
+    "recomputed_interval_endpoints": 16,
+    "valid_model_session_folds": 17760,
+    "max_absolute_difference_BA": 0.0,
+    "bootstrap_draws": 10000,
+    "scope": "complete eligible sessions; participant-weighted"
+  },
+  "known_prior": {
+    "status": "PASS",
+    "splits": 18,
+    "positive_priors": [
+      "1/2",
+      "1/2"
+    ],
+    "exact_optimal_BA": {
+      "A": "3/4",
+      "B": "13/20"
+    }
+  },
+  "fixed_model_degradation": {
+    "eeg_conformer": {
+      "status": "PASS",
+      "participants": 62,
+      "models": 15,
+      "model_average_count": 1,
+      "fixed_min_median_max": [
+        0,
+        8,
+        17
+      ]
+    },
+    "eegnet": {
+      "status": "PASS",
+      "participants": 62,
+      "models": 15,
+      "model_average_count": 1,
+      "fixed_min_median_max": [
+        1,
+        6,
+        14
+      ]
+    }
+  },
+  "paper_sha256": "49971757a3f90d07e9131f4a6ec7e9e78507512c4e8c6b9c021fa86d5fe40c33",
+  "simulation_this_public_check": "NOT_RUN",
+  "raw_eeg_inference": "NOT_RUN",
+  "future_raw_eeg_perturbation": "NOT_RUN",
+  "exact_legacy_platt_ba": "FAIL",
+  "cmt_submission": "NOT_RUN",
+  "linked_submission_pdf": {
+    "sha256": "29c29bd017ba098d9c5821dab159c39e099e50e156aa65efc979fea13d857982",
+    "source_zip_sha256": "1bc6da2e661bd5f97e49d137b58b4e8b8c75470db9f881e6e80fb4a3419ee3fe",
+    "version_change": "Section VI-B supplies the public address and describes input transport. All other TeX and all figures are unchanged from submission-prep-4.",
+    "pages": 11,
+    "figures": 6,
+    "tables": 5,
+    "references_start_page": 10,
+    "working_link_page": 10,
+    "independent_source_build": "PASS"
+  },
+  "signed_out_reader_qualification": "The access checks refer to an unsigned HTTP download of the fixed Git commit. Release asset digests are supplied for independent verification."
+}

@@ -2,9 +2,13 @@
 
 Reproduction files for the ICDE 2027 Experiment, Analysis, and Benchmark submission. The score-replay release is **acdd-public-v1**. The paper, fitting, scoring and aggregation match the preserved submission-prep-4 candidate. The public launcher also handles long Windows extraction paths.
 
-[Paper PDF](artifact/candidate.pdf) · [Compilable LaTeX](submission/manuscript_source.zip) · [Submission text and scope statement](submission/submission-text.txt) · [Per-result reproduction guide](artifact/README.md) · [Data sources and terms](DATA_SOURCES.md)
+[Current paper PDF](submission/current/ACDD_ICDE2027_public.pdf) · [Matching LaTeX sources](submission/current/ACDD_ICDE2027_public_source.zip) · [Submission text and scope statement](submission/submission-text.txt) · [Per-result reproduction guide](artifact/README.md) · [Data sources and terms](DATA_SOURCES.md)
 
 [Original figure scripts and drawing sources](figures/README.md) · [Upstream inference source and model mapping](upstream/README.md)
+
+[Versioned release and verified downloads](https://github.com/lcasxw/acdd-icde2027/releases/tag/acdd-public-v1) · [Public replay receipt](submission/current/PUBLIC_REPLAY_RECEIPT.json) · [CMT artifact address](submission/current/CMT_ARTIFACT_URL.txt)
+
+The current submission PDF places the public URL in Section VI-B. The frozen preparation paper remains in the analysis snapshot. The repository also contains the original drawing sources, both inference models and the historical-to-public checkpoint mapping.
 
 ## Reproduce the results
 
