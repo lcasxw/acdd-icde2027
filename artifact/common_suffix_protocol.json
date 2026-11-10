@@ -1,0 +1,14 @@
+{
+  "analysis_role": "new post-hoc descriptive sensitivity, specified for the ICDE revision",
+  "date_specified": "2026-11-10",
+  "historical_primary_endpoint": "unchanged: prefix 10, assess trials 11..n; two-point magnitude rule",
+  "units": "all 30 locked raw-BN units; five source conditions x three seeds per backbone",
+  "eligibility": "one common participant intersection across all 30 units, identical ordered trial keys and labels, n>50 and both classes in the common suffix; record exclusions",
+  "fit": "linear-interpolated sample quantile at 1-0.5 using the first k unlabeled raw-logit scores only",
+  "k": [5, 10, 20, 50],
+  "evaluation_one_based": "51..n inclusive for all four settings",
+  "reference": "zero-logit decision on the very same suffix, ties positive for both rules",
+  "aggregation": "equally average three seeds within each of five source conditions, equally average conditions within participant, then equally average participants by backbone",
+  "interval": "descriptive 95% participant percentile bootstrap; 10000 shared index vectors across all k and both backbones; numpy default_rng(20261110)",
+  "selection": "report every k for both backbones in specified order; no gate, multiplicity inference, optimal budget or model selection"
+}

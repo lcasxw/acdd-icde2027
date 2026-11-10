@@ -1,0 +1,11 @@
+backbone,endpoint,mean_gain,method,n_protocols_kept,omitted_protocol
+eeg_conformer,prefix_suffix,0.01327248688191076,target_prior_quantile,4,lodo/Stieger2021
+eeg_conformer,prefix_suffix,0.02271925250552263,target_prior_quantile,4,single-source/BNCI2014_001-to-Stieger2021
+eeg_conformer,prefix_suffix,0.017797905605269695,target_prior_quantile,4,single-source/Cho2017-to-Stieger2021
+eeg_conformer,prefix_suffix,0.016188170321613723,target_prior_quantile,4,single-source/Lee2019_MI-to-Stieger2021
+eeg_conformer,prefix_suffix,0.017664584998208274,target_prior_quantile,4,single-source/PhysionetMI-to-Stieger2021
+eegnet,prefix_suffix,0.01752891645755907,target_prior_quantile,4,lodo/Stieger2021
+eegnet,prefix_suffix,0.013222003248162991,target_prior_quantile,4,single-source/BNCI2014_001-to-Stieger2021
+eegnet,prefix_suffix,0.010407151752857042,target_prior_quantile,4,single-source/Cho2017-to-Stieger2021
+eegnet,prefix_suffix,0.017474457964183576,target_prior_quantile,4,single-source/Lee2019_MI-to-Stieger2021
+eegnet,prefix_suffix,0.01196199174200868,target_prior_quantile,4,single-source/PhysionetMI-to-Stieger2021

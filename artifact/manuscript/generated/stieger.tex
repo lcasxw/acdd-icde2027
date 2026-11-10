@@ -1,0 +1,12 @@
+\begin{tabular}{@{}lrr@{}}\toprule
+Protected measure (\%) & EEGNet & Conformer \\\midrule
+Default BA & 53.04 [52.26, 53.90] & 51.18 [50.85, 51.55] \\
+Quantile BA & 54.45 [53.38, 55.60] & 52.93 [52.19, 53.67] \\
+Rank AUC & 57.02 [55.39, 58.75] & 54.95 [53.80, 56.11] \\
+Oracle BA & 56.61 [55.50, 57.81] & 55.43 [54.60, 56.28] \\
+\midrule Gain by access (pp) & EEGNet & Conformer \\\midrule
+Fixed prefix 10 & 1.41 [1.01, 1.82] & 1.75 [1.28, 2.23] \\
+Strict past & 1.89 [1.40, 2.39] & 2.34 [1.75, 2.95] \\
+Session forward & 1.63 [1.14, 2.11] & 2.07 [1.50, 2.66] \\
+Complete batch & 1.89 [1.40, 2.40] & 2.42 [1.84, 3.03] \\
+\bottomrule\end{tabular}

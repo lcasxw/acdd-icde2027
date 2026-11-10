@@ -1,0 +1,51 @@
+\section{Decision audit and access protocols}\label{sec:method}
+\subsection{Rows available to a fitted decision}
+An audit record is keyed by target dataset, participant, ordered session and trial, source condition, backbone, candidate and seed. On a frozen model let $s_j=z_{1j}-z_{0j}$ be the difference between right- and left-hand logits. The default rule predicts right when $s_j\geq0$. Historical probability exports use the corresponding 0.5 decision. For every threshold we record its fitting rows $F_j$, evaluation rows $E$ and access to source labels. Two thresholds can share $|F_j|$ while admitting different observations to evaluation (Table~\ref{tab:contracts}).
+
+\begin{table*}[t]
+\caption{Information contracts. Indices are one-based within the participant's recorded order. Target labels enter outcome calculation and the two explicitly identified reference fits. Each comparison uses default predictions on its own evaluation set.}\label{tab:contracts}
+\centering\small
+\begin{tabular}{@{}p{.17\textwidth}p{.28\textwidth}p{.19\textwidth}p{.28\textwidth}@{}}\toprule
+Contract & Information used to fit & Evaluated observations & Interpretation or comparator\\\midrule
+Source only & Labeled source-validation scores & Declared target window & Fixed shift, scale or threshold before observing target scores\\
+Historical prefix ten & Target scores 1--10 & Entire record & Retrospective, including its warm-up\\
+Fixed prefix & Target scores $1,\ldots,k$ & $k+1,\ldots,n$ & Frozen per-participant threshold after warm-up\\
+Strict past & Target scores $1,\ldots,j-1$ & $j$ from the declared start & Threshold can change on every trial\\
+Session forward & Entire first recorded session, unlabeled & All later sessions & Frozen after the first session\\
+Complete batch & Entire participant score record, unlabeled & Entire record & Transductive, including current and future scores\\
+Common suffix & Target scores $1,\ldots,k$ for each budget & $51,\ldots,n$ for all $k$ & Post-hoc budget comparison on identical rows\\
+Signal controls & Full target signals (AdaBN) or sequential signals (TENT, T3A, T-TIME protocols) & Original matched control trials & Feature statistics or representations may change\\
+Oracle diagnostics & Target labels and scores on $E$, or on other sessions & $E$, or the held session & Label-informed threshold reference only\\\bottomrule
+\end{tabular}
+\end{table*}
+
+The prior-quantile policy takes a declared positive-class prior of 0.5 and uses the linearly interpolated median of the admissible scores, assigning ties to the positive class. It uses neither class frequencies measured from target labels nor source calibration. The protected fit freezes after ten scores. A strict-past median updates from the preceding scores, predicts the current trial and then admits its score to subsequent fits. A session-forward policy can consume a much longer warm-up. Historical prefix and complete-batch policies can use information unavailable at a scored trial. The replay checked unique trial order within each model--participant stream and matched ordered row keys and labels across checkpoints. Flipping labels preserved the prefix rows. Changing scores after trial 51 preserved its decision. A one-pass strict-past replay admitted each score after prediction. Full-batch fits read all scores, and oracle fits read labels as specified. Gains were computed on matched evaluation rows before averaging seeds and source conditions within participant. The contracts form a partial order because access to labeled source validation, target scores and target signals imposes different requirements.
+
+\subsection{Decision decomposition and reference thresholds}
+For participant $i$, $\BA_i(d)$ averages the two class recalls on $E$. Let $d_0$ be the default decision, $d_{A,i}$ the decision permitted by access contract $A$, and $d_i^*$ the static threshold maximizing empirical BA using labels on $E$. With all terms evaluated on those same rows,
+\begin{align}
+H_{\mathrm{disc},i}&=\BA_i(d_i^*)-0.5,\\
+L_{\mathrm{decision},i}&=\BA_i(d_i^*)-\BA_i(d_0),\\
+L_{A,i}&=\BA_i(d_i^*)-\BA_i(d_{A,i}),\\
+G_{A,i}&=\BA_i(d_{A,i})-\BA_i(d_0).
+\end{align}
+Subtracting gives $G_{A,i}=L_{\mathrm{decision},i}-L_{A,i}$. This identity organizes measurements. AUC measures rank discrimination independently. $H_{\mathrm{disc},i}$ measures threshold-dependent headroom above chance. A dynamic rule can outperform the in-sample static threshold and yield negative $L_{A,i}$. Relative recovery $G_{A,i}/L_{\mathrm{decision},i}$ is defined here only when $L_{\mathrm{decision},i}\geq0.01$ and may fall outside $[0,1]$.
+
+Optimizing on the evaluation labels can make a static reference optimistic. For a second diagnostic we fit the BA-maximizing threshold on all sessions except one, predict the held session and repeat for each session of the same participant and model. Both fitting and held portions must contain both classes and a participant needs at least two valid folds. The comparator and in-sample reference use complete eligible sessions. Other-session fitting can include later sessions. A held-fold reference can fall below the default. Its difference from the in-sample value mixes sample size, fitting optimism and between-session variation.
+
+\subsection{Policies, calibration and utility}
+The source Youden threshold maximizes sensitivity plus specificity minus one on validation labels~\cite{youden1950}. Positive temperature scaling preserves the logit sign. An intercept, a fitted Platt map or an isotonic map can move the operating point~\cite{platt1999,guo2017}. We retain source-only policies as controls for how much decision placement can be transferred without target observations. Calibration quality, measured by ECE, Brier score or log loss, and BA answer different questions. Macro-F1 and weighted recall with class weights 0.25/0.75 were secondary decision outcomes.
+
+Two additional policies share the source-only Platt fit and the first ten unlabeled target scores. EM iterates a prior under a label-shift model, using at most 100 updates, tolerance $10^{-8}$ and clipping to $[0.05,0.95]$~\cite{saerens2002,alexandari2020}. Ridge BBSE estimates the target prior from the source hard-prediction confusion operator with shrinkage toward the source prior~\cite{lipton2018}. The main ridge is $10^{-3}$ with sensitivities $10^{-4},10^{-2},10^{-1}$. The implementation uses ridge inversion and posterior adjustment. The original RLLS procedure additionally defines a distinct estimation and weighted-learning objective~\cite{azizzadenesheli2019}. Platt-v2 fits stable logistic loss to source trials, retains the original parameter bounds and stores the centered fit. Neither target labels nor EEG outcomes enter the choice of fit.
+
+Both posterior-adjustment policies classify at 0.5. For a true posterior under target prior $q$, BA weights correct positive and negative decisions by $1/q$ and $1/(1-q)$, respectively. The BA-optimal posterior cutoff is thus $q$. Under strict label shift, comparing the adjusted posterior to the same estimated $q$ cancels the prior-odds adjustment, yielding $p_s\geq\pi_s$ in terms of source posterior and prior. We compare this source cutoff with 0.5 on identical participants, rows and Platt-v2 fits. These cutoffs separate two utilities without establishing whether label shift holds.
+
+\subsection{Estimands, uncertainty and degradation}
+We compare each policy with the matched default within participant and fixed model. At Stieger the main estimate averages three seeds within each of five source conditions, then conditions within participant, then participants. Let $g_{im}$ denote fixed-model gain and $\bar g_i$ its average over those 15 configurations of one backbone. The participant bootstrap resamples 62 participant means 10,000 times. Discovery uses hierarchical dataset--protocol--participant resampling. Dreyer resamples participants after aggregating the frozen conditions. Trial counts and the number of checkpoints do not increase the number of independent participants.
+
+The primary participant-level degradation estimate is $D_A(\delta)=62^{-1}\sum_i I(\bar g_i<-\delta)$ for $\delta=0$ or $0.02$ at Stieger. For deployment at model $m$ it becomes $62^{-1}\sum_i I(g_{im}<-\delta)$. These operations count different events. A fixed-model interval across participants and the range across recorded models also answer different questions. We examine deletion of each source condition, all pairwise seed rank correlations and participant quartiles of AUC and default decision loss. Quartiles are formed separately by backbone and stratifier. Percentile intervals condition on the observed strata. For rare decreases we also report a Wilson interval. These are descriptive sensitivities on the original frozen grid.
+
+\subsection{Where temporal guarantees begin}
+The Stieger adapter concatenates trial segments within session, builds events from annotations and delegates filtering, epoching and resampling to MOABB/MNE. The interface uses FC3, FC4, C3, Cz, C4, CP3, CPz and CP4, 4--40 Hz filtering, 250 Hz sampling and an exported epoch of $[-1,3]$ s. Cropping to $[0.5,2.5)$ s after the cue yields $8\times500$ inputs. The exporter marks an event only for artifact-free trials lasting at least as long as the dataset adapter requires. Each retained session must contain at least 30 valid left/right trials and both classes. The protected prefix comprises the first ten eligible exported trials for each participant. The historical raw-signal pipeline has not been perturbed to test whether changing a later EEG segment changes an earlier score.
+
+Raw-BN loads the frozen weights in evaluation mode. BatchNorm uses its checkpoint running statistics and the input transform fits no target alignment or standardization. Evaluation labels are appended after logits are generated. Replay sorts each participant's records by the exported trial order and checks that numeric session IDs never decrease. An independent one-pass median reproduced all 2,070,240 strict-past quantile decisions from the batch-indexed implementation. Checks at the recorded-score boundary establish what a policy read. They leave whole-system acquisition causality, latency and feedback unresolved.

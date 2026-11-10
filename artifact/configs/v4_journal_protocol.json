@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "study_id": "v4-journal-access-aware-measurement",
+  "run_namespace": "v4-journal",
+  "status": "discovery_expansion",
+  "paper_type": "Nature Machine Intelligence Analysis",
+  "story_shape": ["measurement_new_ruler", "trust_audit_bridge"],
+  "scientific_claim": "Fixed-threshold balanced accuracy can conflate ranking failure with decision-scale drift; access-aware evaluation separates these failure modes in cross-dataset motor-imagery EEG.",
+  "non_claims": [
+    "intervention sensitivity predicts transfer risk",
+    "GroupNorm is a new algorithm",
+    "quantile thresholding is a new algorithm",
+    "any result generalizes beyond the declared EEG protocols before external confirmation"
+  ],
+  "discovery_datasets": ["BNCI2014_001", "Cho2017", "PhysionetMI", "Lee2019_MI"],
+  "confirmatory_dataset": {
+    "name": "Dreyer2023",
+    "status": "locked",
+    "may_access_before_freeze": false,
+    "single_source_protocols": 4,
+    "lodo_protocols": 1,
+    "backbones": ["eegnet", "eeg_conformer"],
+    "seeds": [17, 29, 43],
+    "candidates": ["raw-bn", "raw-gn", "frozen-access-winner"]
+  },
+  "training_matrix": {
+    "seeds": [17, 29, 43],
+    "protocols": {"single_source_directions": 12, "lodo_targets": 4},
+    "backbone": "eegnet",
+    "candidates": [
+      {"id": "raw-bn", "preprocessing": "raw", "normalization": "batch_norm", "access_group": "source_only"},
+      {"id": "raw-gn", "preprocessing": "raw", "normalization": "group_norm", "access_group": "source_only"},
+      {"id": "raw-ln", "preprocessing": "raw", "normalization": "layer_norm", "access_group": "source_only"},
+      {"id": "raw-in", "preprocessing": "raw", "normalization": "instance_norm", "access_group": "source_only"},
+      {"id": "trial-z-gn", "preprocessing": "trial_z", "normalization": "group_norm", "access_group": "sample_local"},
+      {"id": "robust-mad-gn", "preprocessing": "robust_mad", "normalization": "group_norm", "access_group": "full_unlabeled_signal"},
+      {"id": "euclidean-align-gn", "preprocessing": "euclidean_alignment", "normalization": "group_norm", "access_group": "full_unlabeled_signal"},
+      {"id": "riemannian-align-gn", "preprocessing": "riemannian_alignment", "normalization": "group_norm", "access_group": "full_unlabeled_signal"}
+    ],
+    "expected_units": 384
+  },
+  "conformer_replication": {
+    "status": "blocked_until_eegnet_winners_frozen",
+    "protocols": 16,
+    "seeds": [17, 29, 43],
+    "candidates": ["raw-bn", "raw-gn", "frozen-access-winner"],
+    "winner_access_group": "full_unlabeled_signal",
+    "expected_units": 144
+  },
+  "access_groups": {
+    "source_only": ["fixed_threshold", "source_validation_threshold", "raw_network_normalization"],
+    "sample_local": ["trial_z"],
+    "full_unlabeled_signal": ["robust_mad", "euclidean_alignment", "riemannian_alignment", "adabn"],
+    "online_unlabeled_signal": ["tent", "t3a", "ttime_official"],
+    "full_unlabeled_score": ["prior_quantile_full"],
+    "prefix10_unlabeled_score": ["prior_quantile_prefix10"],
+    "oracle_diagnostic": ["oracle_threshold"]
+  },
+  "external_baselines": {
+    "tent": {"status": "reference_equation_implementation", "official_repository": "https://github.com/DequanWang/tent"},
+    "t3a": {"status": "reference_equation_implementation", "official_repository": "https://github.com/matsuolab/T3A"},
+    "ttime_official": {"status": "requires_verified_external_checkout", "official_repository": "https://github.com/sylyoung/DeepTransferEEG"},
+    "bft": {"status": "conceptual_comparison_only", "numeric_results_allowed": false}
+  },
+  "score_transport": {
+    "positive_prior": 0.5,
+    "prefix_trials": 10,
+    "prefix_recovery_endpoint": 0.75,
+    "class_block_order": "failure_stress_test"
+  },
+  "metrics": [
+    "balanced_accuracy",
+    "roc_auc",
+    "macro_f1",
+    "cohen_kappa",
+    "ece",
+    "brier",
+    "worst_subject_balanced_accuracy",
+    "p10_subject_balanced_accuracy",
+    "latency_ms_per_trial",
+    "peak_gpu_memory_mb",
+    "adaptation_parameter_count"
+  ],
+  "reporting_rules": {
+    "subject_is_statistical_unit": true,
+    "bootstrap_samples": 10000,
+    "confidence_level": 0.95,
+    "rankings_must_not_cross_access_groups": true,
+    "failures_reported_without_reselection": true
+  },
+  "confirmation_gates": {
+    "mean_subject_auc_minimum": 0.60,
+    "full_prior_ba_gain_minimum": 0.03,
+    "full_prior_gain_ci_lower_strictly_above": 0.0,
+    "group_norm_ba_gain_minimum": 0.02,
+    "group_norm_gain_ci_lower_strictly_above": 0.0,
+    "prefix10_full_gain_recovery_minimum": 0.75,
+    "prefix10_is_secondary": true
+  },
+  "freeze": {
+    "required_discovery_artifacts": [
+      "../outputs/v3-rank-calibration-discovery/decision.json",
+      "../outputs/v3-rank-calibration-discovery/direction_summary.csv",
+      "../outputs/v3-rank-calibration-discovery/streaming_direction_summary.csv",
+      "../outputs/v3-normalization-confirm/analysis/final/v3_normalization_final.json",
+      "outputs/v4-journal/protocol/journal-plan.json",
+      "outputs/v4-journal/analysis/journal_summary.json",
+      "outputs/v4-journal/analysis/method_selection.json",
+      "outputs/v4-journal/analysis/matrix_completeness.json",
+      "outputs/v4-journal/analysis/journal_master_results.csv",
+      "outputs/v4-journal/analysis/discovery_bootstrap.json",
+      "outputs/v4-journal/analysis/freeze_readiness.json",
+      "outputs/v4-journal/analysis/evidence_index.json",
+      "outputs/v4-journal/analysis/v4_ttime_completion_manifest.json",
+      "outputs/v4-journal-cloud/analysis/discovery-v1",
+      "outputs/v4-journal-cloud/analysis/audit/v4_tta_artifact_audit.json",
+      "outputs/v4-journal-cloud/analysis/tta-v1/tta_paired_effects.json",
+      "outputs/v4-journal-cloud/analysis/ttime-v1/ttime_summary.json",
+      "outputs/v4-journal-cloud/analysis/ttime-v1/v4_ttime_artifact_audit.json",
+      "outputs/v4-journal-cloud/analysis/ttime-v1/ttime_paired_effects.json",
+      "analysis/finalize_v4_journal_freeze.py",
+      "analysis/bootstrap_v4_discovery.py",
+      "analysis/analyze_v4_tta_effects.py",
+      "analysis/analyze_v4_ttime_effects.py",
+      "analysis/audit_v4_tta.py",
+      "analysis/audit_v4_ttime_results.py",
+      "analysis/analyze_v4_dreyer_confirmation.py",
+      "scripts/cloud/run_v4_dreyer_parallel.py",
+      "scripts/cloud/run_v4_dreyer_confirmation.sh",
+      "paper/nmi_analysis/analysis_plan.json",
+      "paper/nmi_analysis/research_integrity.md",
+      "paper/nmi_analysis/figure_data_contract.md"
+    ],
+    "lock_output": "locks/v4-journal-dreyer.lock.json",
+    "hash_algorithm": "sha256"
+  }
+}

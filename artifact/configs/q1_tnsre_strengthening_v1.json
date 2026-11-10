@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "study_id": "q1-strengthening-v1",
+  "analysis_role": "post-confirmation validity analysis",
+  "target_journal": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+  "allows_training": false,
+  "allows_dataset_or_endpoint_reselection": false,
+  "preserves_stieger_decision_branch": "mixed",
+  "primary_candidate": "raw-bn",
+  "backbones": ["eegnet", "eeg_conformer"],
+  "seeds": [17, 29, 43],
+  "source_protocols": [
+    "single-source/BNCI2014_001-to-Stieger2021",
+    "single-source/Cho2017-to-Stieger2021",
+    "single-source/PhysionetMI-to-Stieger2021",
+    "single-source/Lee2019_MI-to-Stieger2021",
+    "lodo/Stieger2021"
+  ],
+  "construct_validity": {
+    "sample_sizes": [40, 80, 160, 320, 640],
+    "positive_priors": [0.3, 0.5, 0.7],
+    "class_separations": [0.5, 1.0, 2.0],
+    "repetitions_per_seed_cell": 1000,
+    "seeds": [17, 29, 43],
+    "intercept_shift": 1.0,
+    "positive_slope_compression": 0.2,
+    "rank_noise_standard_deviation": 1.0,
+    "identity_residual_tolerance": 1e-10,
+    "coverage_minimum_n": 160,
+    "coverage_gate": 0.92,
+    "confidence_level": 0.95,
+    "coverage_estimand": "population balanced-accuracy decision loss between the known Gaussian-optimal threshold and the default threshold",
+    "coverage_interval": "paired stratified normal interval"
+  },
+  "cross_fitted_oracle": {
+    "fold": "leave-one-session-out",
+    "minimum_valid_folds_per_participant": 2,
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 20260821,
+    "in_sample_oracle_role": "descriptive upper bound",
+    "stop_rule": "stop submission if the principal diagnostic direction reverses for both backbones"
+  },
+  "threshold_policies": {
+    "main": [
+      "fixed_0.5",
+      "source_youden",
+      "source_intercept",
+      "source_platt",
+      "source_temperature",
+      "target_prior_quantile",
+      "platt_em",
+      "rlls_bbse"
+    ],
+    "si_only": ["source_isotonic"],
+    "em": {"maximum_iterations": 100, "tolerance": 1e-8, "prior_bounds": [0.05, 0.95]},
+    "rlls": {"main_ridge": 0.001, "si_ridges": [0.0001, 0.001, 0.01, 0.1]},
+    "declared_target_prior": 0.5
+  },
+  "endpoints": ["prefix_suffix", "prequential", "session1_to_later", "full_prior"],
+  "prefix_lengths": [5, 10, 20, 50],
+  "primary_metric": "balanced_accuracy",
+  "si_metrics": ["macro_f1", "weighted_recall_0.25_0.75"],
+  "harm_definitions": {"any_negative": 0.0, "practical": -0.02},
+  "weighting_estimands": ["participant_weighted", "protocol_balanced", "dataset_balanced"],
+  "reporting_guards": {
+    "cross_access_ranking_prohibited": true,
+    "target_labels_available_to_deployable_fit": false,
+    "full_batch_may_be_called_online": false,
+    "oracle_may_be_called_deployable": false,
+    "stieger_result_language": "statistically reliable but modest mixed result"
+  }
+}

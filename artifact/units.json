@@ -1,0 +1,274 @@
+{
+  "units": [
+    {
+      "unit_id": "STIEGER-INF-001",
+      "backbone": "eegnet",
+      "protocol_id": "single-source/BNCI2014_001-to-Stieger2021",
+      "seed": 17,
+      "target_predictions_sha256": "be09155db9825ffdb5f4d74217c8e5a145530ce70603a0a9353d940353ed2959",
+      "source_validation_predictions_sha256": "eede41a583a27834ef2d6cc40960d5cb27c460f42c1d194a0f084264cd6678d4",
+      "target_predictions_relative_path": "STIEGER-INF-001/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-002",
+      "backbone": "eegnet",
+      "protocol_id": "single-source/BNCI2014_001-to-Stieger2021",
+      "seed": 29,
+      "target_predictions_sha256": "747afa2041b955b87b241b3cadc71308e73033f266a994b5ee4a1912e30483c5",
+      "source_validation_predictions_sha256": "1cb54dc5ad46b26ad62b60670e6b71bde0399ef6e3f61ad291780b1a214acdff",
+      "target_predictions_relative_path": "STIEGER-INF-002/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-003",
+      "backbone": "eegnet",
+      "protocol_id": "single-source/BNCI2014_001-to-Stieger2021",
+      "seed": 43,
+      "target_predictions_sha256": "4cd2ea55ec527927249a7c664e7f6ebcf86ac4b62c60b0f993423101099c8384",
+      "source_validation_predictions_sha256": "1baa26c37b44d216af509838b172c12e48078148a2131911c8b964e9bf768ebe",
+      "target_predictions_relative_path": "STIEGER-INF-003/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-010",
+      "backbone": "eeg_conformer",
+      "protocol_id": "single-source/BNCI2014_001-to-Stieger2021",
+      "seed": 17,
+      "target_predictions_sha256": "ba0d9c60d4e2aadb07bd4d0e4f82a7f798298787e39a41ddd56a97919eadfdba",
+      "source_validation_predictions_sha256": "de60b71aa7dbb2293a077bdffa7da9904ca05478a0a01c687e271e71690fa9cc",
+      "target_predictions_relative_path": "STIEGER-INF-010/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-011",
+      "backbone": "eeg_conformer",
+      "protocol_id": "single-source/BNCI2014_001-to-Stieger2021",
+      "seed": 29,
+      "target_predictions_sha256": "a388a3aa3407dcc55c07617e3a70f80ff33ce29e8fba64af0f77b06c79e0d9ec",
+      "source_validation_predictions_sha256": "160f5d580a56caeb995e1eaa4fd434e4e1832261ca084364b4a79a37f6db930a",
+      "target_predictions_relative_path": "STIEGER-INF-011/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-012",
+      "backbone": "eeg_conformer",
+      "protocol_id": "single-source/BNCI2014_001-to-Stieger2021",
+      "seed": 43,
+      "target_predictions_sha256": "407ec67d514b0d57a430bd1ce98b374e92ec6cca8cf4b6f4950760eff6667e85",
+      "source_validation_predictions_sha256": "7c2da0c56ef8f8f58f41dc7810903a784ef659a9ddfb661f7e85d12da48ce8b0",
+      "target_predictions_relative_path": "STIEGER-INF-012/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-019",
+      "backbone": "eegnet",
+      "protocol_id": "single-source/Cho2017-to-Stieger2021",
+      "seed": 17,
+      "target_predictions_sha256": "13155fe66ae28e78374af7174da93a41fe8278689c14eeb29b8332028948da9b",
+      "source_validation_predictions_sha256": "f13f3844f1c21032b0154f712c6ec9f9bb14f9160be3fa58d1224c4b62656b7c",
+      "target_predictions_relative_path": "STIEGER-INF-019/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-020",
+      "backbone": "eegnet",
+      "protocol_id": "single-source/Cho2017-to-Stieger2021",
+      "seed": 29,
+      "target_predictions_sha256": "d84ebb026b382f32f20fb159476d11289c49fb06944d6636a8109ff8b4e68d5b",
+      "source_validation_predictions_sha256": "437c9d06d4d8ac327009e96ec5acddb316fb730f345d8758424608f0251c852e",
+      "target_predictions_relative_path": "STIEGER-INF-020/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-021",
+      "backbone": "eegnet",
+      "protocol_id": "single-source/Cho2017-to-Stieger2021",
+      "seed": 43,
+      "target_predictions_sha256": "edb0d732c9e576a9260fa8bb388dd857d9751ac0a3d48707bb2d374eb69369a6",
+      "source_validation_predictions_sha256": "879637e23e1a3e48bf39470dca2978b34267c97467e5945993b97d74b57cc104",
+      "target_predictions_relative_path": "STIEGER-INF-021/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-028",
+      "backbone": "eeg_conformer",
+      "protocol_id": "single-source/Cho2017-to-Stieger2021",
+      "seed": 17,
+      "target_predictions_sha256": "ac04b0d0a6a8444310292a7a9fa179d55f658ac9ffeea51d3c508b35741c8881",
+      "source_validation_predictions_sha256": "ded05e3862c4c3e29c7726fe30d04a603374cda2f1b8a2adf81480ff3669811f",
+      "target_predictions_relative_path": "STIEGER-INF-028/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-029",
+      "backbone": "eeg_conformer",
+      "protocol_id": "single-source/Cho2017-to-Stieger2021",
+      "seed": 29,
+      "target_predictions_sha256": "6c6b77a7274839a7ecdefbbf7a55dac5142c6016b72aa9f0f4dae1b998fc7308",
+      "source_validation_predictions_sha256": "9d55f87e99858cbb4b768d40a33c78bd6f8b971e58bec2d8740d3abf8f66b053",
+      "target_predictions_relative_path": "STIEGER-INF-029/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-030",
+      "backbone": "eeg_conformer",
+      "protocol_id": "single-source/Cho2017-to-Stieger2021",
+      "seed": 43,
+      "target_predictions_sha256": "4dd30a6a4294301b4b5d76fe2f33901f6e8f8d5895f073ac24a8a4359b8f1f4b",
+      "source_validation_predictions_sha256": "08046eec9f981f67a541f6195a77fc7a21f5e49c7718827d6907fe2d4746e3dd",
+      "target_predictions_relative_path": "STIEGER-INF-030/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-037",
+      "backbone": "eegnet",
+      "protocol_id": "single-source/PhysionetMI-to-Stieger2021",
+      "seed": 17,
+      "target_predictions_sha256": "c8494400a9fa13e30570c2719ba1f9ad829e04ac99b40685d9e91065c8c81ffd",
+      "source_validation_predictions_sha256": "113ecd076f3c5c557312c051783f9e19769efcd0f0e9f85187ddef21ba674529",
+      "target_predictions_relative_path": "STIEGER-INF-037/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-038",
+      "backbone": "eegnet",
+      "protocol_id": "single-source/PhysionetMI-to-Stieger2021",
+      "seed": 29,
+      "target_predictions_sha256": "18e56680ba5cf2653ffd2e4af97fc1aa242c288bbc1b1d4d74b693ec5d91a013",
+      "source_validation_predictions_sha256": "d3db76598818c5c90e2cc5907de45d7523e72231249f1cfbc7d385dc243e5435",
+      "target_predictions_relative_path": "STIEGER-INF-038/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-039",
+      "backbone": "eegnet",
+      "protocol_id": "single-source/PhysionetMI-to-Stieger2021",
+      "seed": 43,
+      "target_predictions_sha256": "434da8e2604b4a3eb9f7d4dcc7637e883e69169d2d70c44417b38434822f4a68",
+      "source_validation_predictions_sha256": "daaf8aa32b94ad77dec4ee24080e65a8c199d1f6999d772fa81c098287a89e8d",
+      "target_predictions_relative_path": "STIEGER-INF-039/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-046",
+      "backbone": "eeg_conformer",
+      "protocol_id": "single-source/PhysionetMI-to-Stieger2021",
+      "seed": 17,
+      "target_predictions_sha256": "874ab8a7cf73855afe1ed42212b02be50c0377002880e76a7fb22cdb5202ce14",
+      "source_validation_predictions_sha256": "c1da05b54377a0f28eff68dee82f764e8988ebcd8bf7241544e934f1046fed29",
+      "target_predictions_relative_path": "STIEGER-INF-046/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-047",
+      "backbone": "eeg_conformer",
+      "protocol_id": "single-source/PhysionetMI-to-Stieger2021",
+      "seed": 29,
+      "target_predictions_sha256": "fc6f1c872efa8c3e1800f3595159ea3cc1c649c36c6dcb933c210b41b5b4b9ab",
+      "source_validation_predictions_sha256": "2933e0effeb03c2fc700e40de43c4819b09f5c4f73cc2726b1d58011cc97a529",
+      "target_predictions_relative_path": "STIEGER-INF-047/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-048",
+      "backbone": "eeg_conformer",
+      "protocol_id": "single-source/PhysionetMI-to-Stieger2021",
+      "seed": 43,
+      "target_predictions_sha256": "b3b454ca51412f09cdb6dae36604a3f8268889b85004be4eaf3f682917c770d9",
+      "source_validation_predictions_sha256": "bea86789085f88bce7de77733b2b6e9032120b62d303fb5fb30b93cf3e640881",
+      "target_predictions_relative_path": "STIEGER-INF-048/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-055",
+      "backbone": "eegnet",
+      "protocol_id": "single-source/Lee2019_MI-to-Stieger2021",
+      "seed": 17,
+      "target_predictions_sha256": "42b375f5e30d2422179397ac65c69c3378192ed43efb12d3a624b4f87b637b15",
+      "source_validation_predictions_sha256": "67cd000b584b2ad2b1b4e2c1a07d6fff35fe4cee7cf77188f96994781c5585c2",
+      "target_predictions_relative_path": "STIEGER-INF-055/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-056",
+      "backbone": "eegnet",
+      "protocol_id": "single-source/Lee2019_MI-to-Stieger2021",
+      "seed": 29,
+      "target_predictions_sha256": "3b78b451a7d5b326e9b23e382f4f706cec2ad8a3f523426eaee301e92daaae76",
+      "source_validation_predictions_sha256": "8bded881fc6286f8a5f12c7f2e63218b42ee08d937213f056d6e5f914e126dab",
+      "target_predictions_relative_path": "STIEGER-INF-056/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-057",
+      "backbone": "eegnet",
+      "protocol_id": "single-source/Lee2019_MI-to-Stieger2021",
+      "seed": 43,
+      "target_predictions_sha256": "19b59fdb1738afc0eec2bc800aa7674db0ea437f6af60cb753253323417e2277",
+      "source_validation_predictions_sha256": "63ebbffd6b4ff52ecb25f1e937b3ea415764b26547b6fa3ba592dba523abaca8",
+      "target_predictions_relative_path": "STIEGER-INF-057/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-064",
+      "backbone": "eeg_conformer",
+      "protocol_id": "single-source/Lee2019_MI-to-Stieger2021",
+      "seed": 17,
+      "target_predictions_sha256": "f7cc59710bc71faea70e4310555e42d492545457dcf89498bb2a892e96ed2381",
+      "source_validation_predictions_sha256": "7064f0f324cb580c56759b5f97dfeb51f56e894cace024b1b0ca2d4a557f32e9",
+      "target_predictions_relative_path": "STIEGER-INF-064/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-065",
+      "backbone": "eeg_conformer",
+      "protocol_id": "single-source/Lee2019_MI-to-Stieger2021",
+      "seed": 29,
+      "target_predictions_sha256": "783dd705949aeb2647e49a7b05e2f4731b25f6aa44d35391e7666a4ab7aa263d",
+      "source_validation_predictions_sha256": "8a46f85b64bdd4391693a893fd20fc0b4924fa2b7bbbc106a6af7489bb753d9f",
+      "target_predictions_relative_path": "STIEGER-INF-065/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-066",
+      "backbone": "eeg_conformer",
+      "protocol_id": "single-source/Lee2019_MI-to-Stieger2021",
+      "seed": 43,
+      "target_predictions_sha256": "737f874a5ae51127bf0488a4bf0817c066208eac04ffd6267e69ee19d4f81ba3",
+      "source_validation_predictions_sha256": "7abb81289d9899fc5790676776e931acf5e87ddf7c592a132665cd41f14fe5ce",
+      "target_predictions_relative_path": "STIEGER-INF-066/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-073",
+      "backbone": "eegnet",
+      "protocol_id": "lodo/Stieger2021",
+      "seed": 17,
+      "target_predictions_sha256": "dfd8be8bf7db08e3145d12e4a485b4ba87c491df0e572879b5c54df42c53af4f",
+      "source_validation_predictions_sha256": "32a76ffa8230bf2caa09804c9a09fa319348234444b570fd80449fd947bed25d",
+      "target_predictions_relative_path": "STIEGER-INF-073/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-074",
+      "backbone": "eegnet",
+      "protocol_id": "lodo/Stieger2021",
+      "seed": 29,
+      "target_predictions_sha256": "43e9551d0c9a89079663ec7504d613a5fbdf3145ef4c24c03fbbd2e79b6f00d2",
+      "source_validation_predictions_sha256": "dfeb3eef6ac37d7acf3aa61afc9ef469e34ab31c14a93f121250a66fb1643fc0",
+      "target_predictions_relative_path": "STIEGER-INF-074/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-075",
+      "backbone": "eegnet",
+      "protocol_id": "lodo/Stieger2021",
+      "seed": 43,
+      "target_predictions_sha256": "1e99ce3353aeaeb01597d9248c280896a91c42f0c7c2425eca1330ec7094f845",
+      "source_validation_predictions_sha256": "2b0c3396e4c7f28428cef92721fa5beb25984ec6b50ca8bc9cc83aab36d80e35",
+      "target_predictions_relative_path": "STIEGER-INF-075/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-082",
+      "backbone": "eeg_conformer",
+      "protocol_id": "lodo/Stieger2021",
+      "seed": 17,
+      "target_predictions_sha256": "bd95dcf67cef9db8207cf22307b4e8f294a790626ed08924942f453ae2d3955d",
+      "source_validation_predictions_sha256": "01d72e3bfbb6dc0ca1cc9e36a0bfc042af4e0638efbf3abaed3c3446e0f577c8",
+      "target_predictions_relative_path": "STIEGER-INF-082/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-083",
+      "backbone": "eeg_conformer",
+      "protocol_id": "lodo/Stieger2021",
+      "seed": 29,
+      "target_predictions_sha256": "f470b0967200f7c97fe0946eb3ec9588d0501cda283f5ae2006fb9d59ce5715d",
+      "source_validation_predictions_sha256": "48242beb5a6a6266f8dd2c9121f434423ec433effb28ebdc5e303add719f8ab2",
+      "target_predictions_relative_path": "STIEGER-INF-083/target.csv"
+    },
+    {
+      "unit_id": "STIEGER-INF-084",
+      "backbone": "eeg_conformer",
+      "protocol_id": "lodo/Stieger2021",
+      "seed": 43,
+      "target_predictions_sha256": "2ba535de99d84821032f276d069202e722b3086ace157f7bc07341f4591e479a",
+      "source_validation_predictions_sha256": "4d0f8447a9a62373e9309eefdd704470575cdf6f8842754439685a557a33476f",
+      "target_predictions_relative_path": "STIEGER-INF-084/target.csv"
+    }
+  ]
+}

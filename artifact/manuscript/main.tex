@@ -1,0 +1,41 @@
+\documentclass[conference,letterpaper]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,booktabs,graphicx}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\BA}{\mathrm{BA}}
+\title{[Experiment, Analysis, and Benchmark] Access-Conditioned Decision Decomposition for Auditing Cross-Dataset Motor-Imagery EEG Decoders}
+\author{\IEEEauthorblockN{Author names and affiliations pending confirmation}}
+\begin{document}
+\maketitle
+\begin{abstract}
+A decision benchmark can report a gain when its fitted rule has seen trials that would be unavailable at prediction time. A positive cohort mean can also conceal how often a particular deployed model makes participants worse off. We study these problems in four discovery datasets (224 participants), locked confirmation (87), and an external repeated-session cohort (62). Access-conditioned decision decomposition (ACDD) records the information available to fit each rule, its evaluation trials, its label-informed diagnostic reference and the order of aggregation. On 62 Stieger2021 participants, fitting a threshold to ten unlabeled scores and scoring subsequent trials moved balanced accuracy from 53.04\% to 54.45\% for EEGNet and from 51.18\% to 52.93\% for a compact EEG-Conformer. Both gains fell below the prespecified two-point criterion. For each backbone, one participant lost more than two points after gains were averaged across 15 model configurations. At a fixed configuration, the counts ranged from 1 to 14 and from 0 to 17 of the same 62 participants. On the same protected trials, the two evaluated posterior-at-0.5 rules (EM and ridge BBSE) reduced mean BA. A common-suffix replay separates changes in the threshold-fitting budget from changes in the evaluation sample. The results delimit what a benchmark on previously generated EEG scores can establish about deployment.
+\end{abstract}
+\begin{IEEEkeywords}
+benchmarking, data provenance, temporal evaluation, electroencephalography, cross-dataset validation
+\end{IEEEkeywords}
+\section{Introduction}\label{sec:intro}
+Consider a benchmark operator who receives a chronologically ordered stream of target scores. A threshold fitted to the first ten scores can be evaluated on the whole stream or only on rows eleven onward. Both queries may appear under the same prefix-ten label in a results table. Only the latter measures performance on trials unseen by that fixed threshold. Another ambiguity arises after evaluation. Counting participants who lose accuracy after averaging over 15 models answers a different question from counting those who would lose accuracy if one particular model were deployed.
+
+These ambiguities matter for motor-imagery EEG. Decoder performance varies with the acquisition, training population and participant~\cite{jayaram2018,eder2024}. In binary classification, an ordering measure such as AUC is invariant to a change of operating threshold~\cite{fawcett2006}. Balanced accuracy (BA), the mean of the two class recalls, depends on that threshold~\cite{brodersen2010}. A gain in BA can therefore occur without a change in the information carried by the representation. Conversely, even useful score ordering can yield poor absolute decisions.
+
+We study these questions with access-conditioned decision decomposition (ACDD), an audit of frozen decoder outputs. The contributions are an empirical comparison of declared information and evaluation windows, a measurement of how model aggregation changes participant-degradation counts, and a trial-level replay with identifiable inputs. We retain the historical cohort endpoints, gate decisions and adverse controls. The experimental variation lies in what an evaluator can read and how it aggregates outcomes. Model architecture and training are fixed.
+\section{Benchmark design and related work}\label{sec:benchmark}
+\subsection{Which records define an experiment?}
+TimeEval organizes time-series anomaly benchmarks through algorithm, dataset and parameter combinations, with separate execution and evaluation stages~\cite{timeeval}. In our setting, two runs with identical model, dataset and policy parameters can still define different comparisons. We record two further components for each result, the rows admitted to fitting and the rows admitted to evaluation. The experimental key also retains the checkpoint, source condition, seed, participant, session and trial order. Its output identifies the matched default decision, access-conditioned decision and any diagnostic that used labels. Our artifact maps these keys to hashed exports, individual outcomes and table rows.
+
+The Dataflow model separates the event-time window to which an observation belongs from when a computation emits a result~\cite{dataflow}. Our narrower problem has a recorded order and a finite participant stream. For a decision on trial $j$, rows can belong to a participant's analysis window while being unavailable when the threshold is fitted. Separating these row sets exposes future access even if each policy eventually reports one number per person. Late-arriving messages, watermarks and processing throughput are outside this experiment.
+
+Schmidl \emph{et al.} explain why a threshold-independent evaluation can give full credit when some threshold separates all cases~\cite{tschmidl}. Here the operating threshold itself is in question. We measure both ordering and the decision achievable with a declared fit window. A label-informed reference then measures how much a fitted rule leaves unexplained. Its availability during evaluation gives it no role in fitting a target policy.
+
+\subsection{Cohorts and the freeze}
+Discovery pools 224 participants across BNCI2014-001 (9), Cho2017 (52), PhysioNetMI (109) and Lee2019-MI (54)~\cite{tangermann2012,cho2017,schalk2009,lee2019}. Locked confirmation uses 87 Dreyer2023 participants~\cite{dreyer2023}. External evaluation uses 62 Stieger2021 participants with repeated sessions~\cite{stieger2021}. The historical prefix-ten endpoint scores the full record, including the first ten trials. The protected Stieger endpoint scores only subsequent trials.
+
+The Stieger register crosses two backbones, five training conditions, three seeds (17, 29 and 43), and three preprocessing/normalization candidates. All 90 registered inference units completed. The prespecified candidate uses raw input and BatchNorm (raw-BN). Its 30 units use EEGNet~\cite{lawhern2018} or a compact EEG-Conformer~\cite{song2023}, with four single-source conditions and one multi-source leave-one-dataset-out condition per backbone. Each checkpoint was selected by mean participant BA on held-out source-validation participants. Those participants also contribute to source calibration. Their results cannot serve as independent source-test evidence. All target decision analyses retain the original checkpoints.
+\input{protocols.tex}
+\input{method.tex}
+\input{results.tex}
+\input{sensitivity.tex}
+\input{discussion.tex}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

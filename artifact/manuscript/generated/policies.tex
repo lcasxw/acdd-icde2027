@@ -1,0 +1,11 @@
+\begin{tabular}{@{}lrrrr@{}}\toprule
+Backbone & Policy & Gain [95\% CI] & $<0$ & $<-2$ \\\midrule
+EEGNet & Source Platt & 0.23 [0.13, 0.32] & 20 & 0 \\
+EEGNet & Prior quantile & 1.41 [1.01, 1.82] & 9 & 1 \\
+EEGNet & Platt--EM & -2.48 [-3.12, -1.89] & 55 & 29 \\
+EEGNet & Ridge BBSE & -2.33 [-2.92, -1.76] & 55 & 27 \\
+Conformer & Source Platt & 0.30 [0.16, 0.46] & 19 & 0 \\
+Conformer & Prior quantile & 1.75 [1.28, 2.23] & 11 & 1 \\
+Conformer & Platt--EM & -1.00 [-1.29, -0.75] & 52 & 11 \\
+Conformer & Ridge BBSE & -1.01 [-1.28, -0.76] & 53 & 11 \\
+\bottomrule\end{tabular}

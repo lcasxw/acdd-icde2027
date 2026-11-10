@@ -1,0 +1,1174 @@
+{
+  "dreyer_confirmation": [
+    {
+      "unit_id": "J-CONFIRM-001",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-002",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-003",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-004",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-005",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-006",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-007",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-008",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-009",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-010",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-011",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-012",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-013",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-014",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-015",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-016",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-017",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-018",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/BNCI2014_001-to-Dreyer2023",
+        "source": "BNCI2014_001",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-019",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-020",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-021",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-022",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-023",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-024",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-025",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-026",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-027",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-028",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-029",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-030",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-031",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-032",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-033",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-034",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-035",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-036",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Cho2017-to-Dreyer2023",
+        "source": "Cho2017",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-037",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-038",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-039",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-040",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-041",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-042",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-043",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-044",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-045",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-046",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-047",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-048",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-049",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-050",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-051",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-052",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-053",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-054",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/PhysionetMI-to-Dreyer2023",
+        "source": "PhysionetMI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-055",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-056",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-057",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-058",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-059",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-060",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-061",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-062",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-063",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-064",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-065",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-066",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-067",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-068",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-069",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-070",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-071",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-072",
+      "protocol": {
+        "kind": "single_source",
+        "id": "single-source/Lee2019_MI-to-Dreyer2023",
+        "source": "Lee2019_MI",
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-073",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-074",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-075",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-bn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-076",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-077",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-078",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "raw-gn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-079",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-080",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-081",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eegnet",
+      "candidate": "frozen-access-winner",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-082",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-083",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-084",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-bn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-085",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-086",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-087",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "raw-gn",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-088",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 17,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-089",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 29,
+      "requires_confirmation_lock": true
+    },
+    {
+      "unit_id": "J-CONFIRM-090",
+      "protocol": {
+        "kind": "lodo",
+        "id": "lodo/Dreyer2023",
+        "source": null,
+        "target": "Dreyer2023"
+      },
+      "backbone": "eeg_conformer",
+      "candidate": "frozen-access-winner",
+      "seed": 43,
+      "requires_confirmation_lock": true
+    }
+  ]
+}
